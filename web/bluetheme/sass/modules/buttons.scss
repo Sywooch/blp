@@ -1,0 +1,44 @@
+// Написал генератор кнопок для верстки
+@mixin button-generator($bg, $border, $color, $bg-hover, $bg-active) {
+  border: 1px solid $border;
+  background: $bg;
+  display: inline-block;
+  border-radius: 35px;
+  padding: 12px 0;
+  min-width: 162px;
+  outline: none;
+
+  span {
+    color: $color;
+    font-size: 0.85em;
+    text-align: center;
+  }
+
+  &:hover {
+    background: $bg-hover;
+    border: 1px solid $bg;
+    cursor: pointer;
+
+    span {
+      color: $bg;
+    }
+  }
+
+  &:active {
+    border: 1px solid darken($bg-active, 10%);
+    background: darken($bg-active, 10%);
+
+    span {
+      color: #fff;
+    }
+  }
+}
+
+
+// Зеленая кнопка
+
+.basic-green {
+  @include button-generator(#42d69d, #42d69d, #fff, #fff, #42d69d);
+}
+
+// Зеленая прозрачная кнопка

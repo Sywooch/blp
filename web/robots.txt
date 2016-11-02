@@ -1,0 +1,12 @@
+User-agent: Yandex
+Allow: /rss.xml
+
+User-agent: *
+Disallow:
+Host: 711.ru
+Sitemap: http://711.ru/sitemap.xml
+Sitemap: http://711.ru/sitemap-pages.xml
+Sitemap: http://711.ru/sitemap-news.xml
+Sitemap: http://711.ru/sitemap-review.xml
+Sitemap: http://711.ru/sitemap-regions.xml
+Sitemap: http://711.ru/sitemap-company-review.xml

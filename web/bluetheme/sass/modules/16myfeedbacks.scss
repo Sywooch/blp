@@ -1,0 +1,23 @@
+aside.my_feedbacks{
+    width: 65%;
+    @include adaptive(pad){
+        width: 100%;
+    }
+    @include adaptive(mobile){
+        width: 100%;
+    }
+}
+.feedbackPage{
+    .my_feedbacks{
+        .content_left_feedback{
+            div.my_feedbacks_all{
+                @include adaptive(mobile){
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    line-height: 50px;
+                }
+            }
+        }
+    }
+}

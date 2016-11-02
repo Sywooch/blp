@@ -1,0 +1,166 @@
+.authorization{
+
+    @include adaptive(mobile){
+        margin-bottom: 30px;
+    }
+}
+.authorization_page{
+    padding: 155px;
+    margin-top: 0;
+    @include adaptive(mobile){
+        padding: 0;
+    }
+}
+.authorization_block{
+    width: 385px;
+    margin: 0 auto;
+    background-color: #fff;
+    @include divshadow;
+    padding: 40px;
+    margin-bottom: 30px;
+    @include adaptive(mobile){
+        width: 320px;
+        padding: 20px;
+    }
+    .social_share{
+        margin: 0;
+        padding-top: 30px;
+        border-top: 1px solid  #e6e6e6;
+        @include adaptive(mobile){
+            padding-top: 20px;
+        }
+    }
+    .social_share_icon{
+        width: 65px;
+        margin-right: 10px;
+        background-size: 35%;
+        &:last-child{
+            margin-right: 0;
+        }
+        @include adaptive(mobile){
+            width: 124px;
+            background-size: 20%;
+            margin-right: 25px;
+            &:nth-child(2){
+                margin-right: 0;
+            }
+        }
+    }
+    .social_share_icon_facebook{
+        background-size: 20%;
+        @include adaptive(mobile){
+            background-size: 12%;
+        }
+    }
+}
+.authorization_question{
+    margin: 0 auto;
+    width: 385px;
+    font-family : "sfuidisplay-regular";
+    font-size : 14px;
+    color : #424955;
+    color : rgb(66, 73, 85);
+    padding-left: 25px;
+    @include adaptive(mobile){
+        width: 320px;
+    }
+}
+.authorization_block_title{
+    font-family : "sfuidisplay-semibold";
+    font-size : 26px;
+    color : #424955;
+    color : rgb(66, 73, 85);
+    margin-bottom: 35px;
+    @include adaptive(mobile){
+        font-size: 21px;
+        margin-bottom: 25px;
+    }
+}
+.client_block_form{
+    margin-bottom: 40px;
+    @include adaptive(mobile){
+        margin-bottom: 30px;
+    }
+    input{
+        width: 300px;
+        line-height: 40px;
+        padding-left: 20px;
+        font-family : "sfuidisplay-regular";
+        font-size : 14px;
+        color : #424955;
+        color : rgb(66, 73, 85);
+        margin-bottom: 20px;
+        outline: none;
+        border: 1px solid #e6e6e6;
+        background-color: #f2f5f7;
+        @include border(4px);
+        &:focus{
+            border-color: #42d69d;
+        }
+        @include adaptive(mobile){
+            width: 280px;
+        }
+    }
+    button{
+        background-color: #42d69d;
+        @include border(20px);
+        width: 160px;
+        outline: none;
+        border: none;
+        color: white;
+        line-height: 38px;
+        margin-right: 35px;
+        @include adaptive(mobile){
+            width: 140px;
+        }
+        &:hover{
+            border: 1px solid #42d69d;
+            line-height: 36px;
+            background-color: #fff;
+            color: #42d69d;
+        }
+        &:active{
+            background-color: #3cc28e;
+            color: white;
+
+        }
+    }
+    .forget_password{
+        font-family : "sfuidisplay-regular";
+        font-size : 14px;
+        color : #4D81EF;
+        color : rgb(77, 129, 239);
+        @include adaptive(mobile){
+            font-size: 12px;
+        }
+    }
+}
+.authorization_question_title{
+    display: inline-block;
+    margin-right: 26px;
+    @include adaptive(mobile){
+        display: block;
+        margin-bottom: 25px;
+    }
+}
+.authorization_question_linkOutRegistration{
+    @include border(20px);
+    border:1px solid #42d69d;
+    line-height: 38px;
+    display: inline-block;
+    width: 145px;
+    text-align: center;
+    color : #424955;
+    @include adaptive(mobile){
+        width: 90%;
+    }
+    &:hover{
+        background-color: #42d69d;
+        color: #fff;
+    }
+    &:active{
+        background-color: #3cc28e;
+        border-color: #3cc28e;
+        color: #fff;
+    }
+}

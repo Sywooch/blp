@@ -1,0 +1,536 @@
+.agentprofile{
+    background-color: #fff;
+    width: 100%;
+    padding: 30px;
+    border-bottom: 1px solid #c6c6c6;
+    @include adaptive(pad){
+        padding: 10px;
+    }
+}
+.agentprofile_item{
+    float: left;
+}
+.agentprofile_photo{
+    width: 20%;
+    padding: 2%;
+    background-color: #fff;
+    img{
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    @include adaptive(mobile){
+        width: 100%;
+        box-sizing: border-box;
+        float: none;
+        height: 120px;
+        img{
+            max-height: 100%;
+        }
+    } 
+}
+.agentprofile_main{
+    width: 50%;
+    .agents_right_card_information_experienceIn{
+        margin-bottom: 10px;
+        span{
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+    @include adaptive(pad){
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    @include adaptive(mobile){
+        width: 100%;
+        margin-bottom: 20px;
+        float: none;
+    }
+}
+.agents_right_card_information_experienceIn_about{
+    font-size: 14px;
+    color: #424955;
+    text-align: justify;
+}
+.agentprofile_main_clientcounter{
+    font-size: 16px;
+    color: #424955;
+}
+.agentprofile_rating{
+    width: 30%;
+    text-align: right;
+    font-family: "sfuidisplay-regular";
+    .stars{
+        float: right;
+        margin-left: 5px;
+        @include adaptive(mobile){
+            display: block;
+            width: 100%;
+            text-align: left;
+        }
+    }
+    @include adaptive(pad){
+        width: 50%;
+        margin-left: 20%;
+        text-align: left;
+    }
+    @include adaptive(mobile){
+        width: 100%;
+        margin-left: 0%;
+        text-align: left;
+    }
+}
+.agentprofile_adress{
+    background-color: #fff;
+    padding: 30px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+.agentprofile_adress_item_text{
+    float: left;
+    display: block;
+    color: #424955;
+    font-size: 17px;
+    font-family: "sfuidisplay-regular";
+    line-height: 24px;
+    width: 51%;
+}
+.agentprofile_adress_item_map{
+    width: 48%;
+    float: right;
+    iframe{
+        width: 100%;
+        height: 300px;
+    }
+}
+.agentprofile_adress_item{
+    padding: 20px 0;
+    .agentprofile_adress_item_link{
+        color: #4d81ef;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.agentprofile_feedbacks{
+    background-color: #fff;
+    padding: 30px;
+    position: relative;
+    #company-search{
+        position: relative;
+        background-color: #fff;
+        left: 0;
+        display: inline-block;
+        width: 32%;
+        vertical-align: top;
+        padding: 0;
+        @include adaptive(mobile){
+            width: 100%;
+            display: block;
+            top: 0px;
+            margin-bottom: 10px;
+        }
+        .agents_companies_choose{
+            padding: 0;
+        }
+        .arrow{
+            right: 22px;
+            top: 0;
+            @include adaptive(pad){
+                right: -135px;
+            }
+            @include adaptive(mobile){
+                right: 0;
+            }
+        }
+    }
+    .agentprofile_main_specialization{
+        margin: 0;
+        padding: 0;
+        line-height: 40px;
+        font-size: 22px;
+        display: inline-block;
+        vertical-align: top;
+        width: 30%;
+        @include adaptive(pad){
+            width: 50%;
+        };
+        @include adaptive(mobile){
+            font-size: 18px;
+            line-height: 25px;
+            width: 100%;
+            display: block;
+            margin-bottom: 10px;
+        }
+    }
+}
+.agentprofile_feedbacks_item{
+    padding-top: 20px;
+    margin-left: 10%;
+    width: 50%;
+    @include adaptive(pad){
+        width: 100%;
+        margin-left: 0;
+    };
+    @include adaptive(mobile){
+        width: 100%;
+        margin-left: 0;
+    }
+}
+.agentprofile_feedbacks_item_user_number{
+    display: inline-block;
+    vertical-align: top;
+    line-height: 33px;
+    width: 30%;
+    margin-bottom: 20px;
+}
+.agentprofile_feedbacks_item_user{
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: rgba(77,129,239,0.2);
+    float: left;
+    margin-bottom: 20px;
+    @include border(5px);
+    .agentprofile_rating{
+        width: 50%;
+        float: right;
+    }
+    @include adaptive(pad){
+        width: 65%;
+    }
+}
+.agentprofile_feedbacks_item_user_review{
+    margin-bottom: 20px;
+}
+.agentprofile_feedbacks_item_answer{
+    width: 60%;
+    float: right;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    @include border(5px);
+    background-color: rgba(66,214,157,0.2);
+}
+.agentprofile_feedbacks_readall{
+    color: rgb(77,129,239);
+    float: left;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+    text-align: left;
+    &:hover{
+        text-decoration: underline;
+    }
+    @include adaptive(pad){
+        text-align: center;
+        padding-bottom: 0;
+    }
+    @include adaptive(mobile){
+        text-align: center;
+        padding-bottom: 0;
+    }
+}
+.agentprofile_reviewsblock{
+    font-size: 0;
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    border-right: none;
+    padding: 20px;
+    padding-bottom: 100px;
+    input{
+            display: none;
+    }
+    @include adaptive(mobile){
+        padding: 1px;
+    }
+}
+.agentprofile_reviewsblock_label{
+    display: inline-block;
+    font-size: 18px;
+    line-height: 39px;
+    padding: 0 10px;
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    cursor: pointer;
+    width: 260px;
+    text-align: center;
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    z-index: 200;
+    background-color: #fff;
+    &:nth-child(2){
+        border-left: 1px solid #e6e6e6;
+    }
+    @include adaptive(pad){
+        width: 210px;
+        font-size: 14px;
+    }
+    @include adaptive(mobile){
+        font-size: 12px;
+        line-height: 16px;
+        width: 105px;
+        left: 0;
+        padding: 5px;
+
+    }
+}
+.agentprofile_reviewsblock_label2{
+    left: 279px;
+    border-right: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    z-index: 400;
+    @include adaptive(pad){
+        left: 229px;
+    }
+    @include adaptive(mobile){
+        left: 104px;
+    }
+}
+.agentprofile_reviewsblock_label3{
+    left: 538px;
+    @include adaptive(pad){
+        left: 438px;
+    }
+    @include adaptive(mobile){
+        left: 208px;
+    }
+}
+.agentprofile_reviewsblock > input[type=radio]:checked + .agentprofile_reviewsblock_label{
+    border-bottom: 1px solid #fff;
+    line-height: 50px;
+    top: 20px;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    z-index: 500;
+    @include adaptive(mobile){
+        line-height: 21px;
+    }
+}
+.agentprofile_reviewsblock_content{
+    width: 80%;
+    font-size: 0;
+    padding: 20px;
+    border: 1px solid #e6e6e6;
+    position: relative;
+    top: 50px;
+    z-index: 100;
+    overflow: hidden;
+    display: none;
+    input{
+        display: none;
+    }
+    @include adaptive(mobile){
+        width: 100%;
+        top: 72px;
+        margin-bottom: 70px;
+        border-bottom: none;
+        border-right: none;
+        border-left: none;
+    }
+}
+.agentprofile_reviewsblock > input[type=radio]:checked + .agentprofile_reviewsblock_label + .agentprofile_reviewsblock_content{
+    display: block;
+}
+.agentprofile_reviewsblock_fast_tableblock{
+    width: 32%;
+    font-size: 16px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    @include adaptive(mobile){
+        line-height: 20px;
+        font-size: 11px;
+        padding: 20px 0;
+    }
+}
+.agentprofile_reviewsblock_fast_tablehead{
+    font-family: "sfuidisplay-semibold";
+}
+.agentprofile_reviewsblock_fast_tablecell{
+    font-family: "sfuidisplay-regular";
+}
+.agentprofile_reviewsblock_fast_text{
+    font-size: 14px;
+    line-height: 24px;
+    margin: 20px 0;
+    @include adaptive(mobile){
+        font-size: 12px;
+        line-height: 18px;
+        text-align: justify;
+    }
+}
+.agentprofile_reviewsblock_medium,.agentprofile_reviewsblock_full{
+    width: 90%;
+    @include adaptive(pad){
+        width: 100%;
+    }
+    @include adaptive(mobile){
+        width: 100%;
+    }
+    input{
+        display: block;
+    }
+    #company-search{
+        position: relative;
+        top: 0;
+        left: 240px;
+        background: #fff;
+        padding: 0;
+        @include adaptive(pad){
+            left: 130px;
+        }
+        @include adaptive(mobile){
+            left: 0;
+            margin-bottom: 10px;
+        }
+        .arrow{
+            right: 20px;
+            @include adaptive(mobile){
+                right: 0;
+            }
+        }
+    }
+    .agents_right_card_rating{
+        left: 240px;
+        position: relative;
+    }
+}
+.agentprofile_reviewsblock_medium_mark{
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 38px;
+    font-family: "sfuidisplay-regular";
+    position: relative;
+    left: 240px;
+    color: #424955;
+    width: 75%;
+    @include adaptive(pad){
+        left: 130px;
+    }
+    @include adaptive(mobile){
+        left: 0px;
+        width: 100%;
+        padding: 0;
+    }
+    .rating_table{
+        width: 40%;
+        @include adaptive(mobile){
+            width: 70%;
+        }
+        .rating-cancel{
+            display: none !important;
+        }
+    }
+    &::after{
+        display: block;
+        width: 100%;
+        content: '';
+        clear: both;
+    }
+    textarea{
+        resize: none;
+        width: 60%;
+        height: 80px;
+        line-height: 20px;
+        font-size: 14px;
+        padding: 10px;
+        word-wrap: break-word;
+        @include border(5px);
+        border: 1px solid #ccc;
+        &:focus{
+            border-color: #42d69d;
+            outline: none;
+        }
+        @include adaptive(pad){
+            width: 100%;
+        }
+        @include adaptive(mobile){
+            width: 100%;
+        }
+    }
+}
+.agentprofile_reviewsblock_medium_sendbutton{
+    width: 300px;
+    display: block;
+    position: relative;
+    left: 240px;
+    @include adaptive(pad){
+        left: 140px;
+    }
+    @include adaptive(mobile){
+        left: 0;
+        width: 280px;
+    }
+}
+.agentprofile_reviewsblock_medium_mark_name{
+    position: absolute;
+    width: 240px;
+    left: -240px;
+    text-align: right;
+    padding-right: 10px;
+    @include adaptive(pad){
+        position: relative;
+        text-align: left;
+        left: 0;
+    }
+    @include adaptive(mobile){
+        position: relative;
+        text-align: left;
+        left: 0;
+        line-height: 18px;
+
+    }
+}
+.agentprofile_reviewsblock_full{
+    textarea{
+        width: 60%;
+        border: 1px solid #ccc;
+        @include adaptive(pad){
+            width: 100%;
+        }
+        @include adaptive(mobile){
+            width: 100%;
+        }
+    }
+}
+.agentprofile_experience{
+    background-color: #fff;
+    padding: 30px;
+    @include adaptive(mobile){
+        padding: 10px;
+    }
+}
+.agentprofile_experience_item{
+    font-size: 15px;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.agentprofile_experience_item_date{
+    font-family: "sfuidisplay-semibold";
+}
+.agentprofile_experience_document{
+    width: 145px;
+    margin-right: 15px;
+    border: 1px solid #ccc;
+    height: 145px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 20px;
+    @include adaptive(mobile){
+        width: 125px;
+        height: 125px;
+
+    }
+}
+.agentprofile_experience_photo{
+    max-width: 100%;
+    max-height: 100%;
+}

@@ -1,0 +1,110 @@
+.feedbackPage{
+    .content_fifth_left{
+        padding-bottom: 0;
+        margin-bottom: 30px;
+    }
+}
+.feedbackPage_title{
+    font-family : "sfuidisplay-semibold";
+    font-size : 36px;
+    line-height : 47.2px;
+    color : #424955;
+    color : rgb(66, 73, 85);
+    margin-bottom: 20px;
+    @include adaptive(mobile){
+        font-size: 21px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+}
+.feedbackPage_request{
+    font-family : "sfuidisplay-regular";
+    font-size : 14px;
+    line-height : 20.8px;
+    color : #424955;
+    color : rgb(66, 73, 85);
+    display: block;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 20px;
+    @include adaptive(mobile){
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+}
+.content_fifth_left_leaveFeedback{
+    @include adaptive(pad){
+        padding-bottom: 5px;
+    }
+}
+.content_fifth_left_leaveFeedback_share{
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 0;
+    line-height: 37px;
+    @include adaptive(mobile){
+        line-height: 50px;
+    }
+}
+.feedbackPage{
+    margin-bottom: 0;
+}
+#leave_feedback_form{
+    //display: none;
+    margin-bottom: 50px;
+    @include adaptive(mobile){
+        margin-bottom: 0;
+        padding-bottom: 10px;
+    }
+}
+.gotYourFeedback{
+    position: relative;
+    height: 700px;
+    display: none;
+    #closing_cross_feedbackGot{
+        background-image: url("../img/closing_cross_gray.svg");
+        display: block;
+    }
+    @include adaptive(mobile){
+        height: 350px;
+    }
+}
+.gotYourFeedback_center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+    text-align: center;
+    @include adaptive(mobile){
+        top: 120px;
+        width: 80%;
+        left: 38%;
+        img{
+            height: 105px;
+        }
+    }
+}
+
+.gotYourFeedback_center_message{
+  font-family : "sfuidisplay-semibold";
+  font-size : 26px;
+  color : #424955;
+  color : rgb(66, 73, 85);
+  padding: 50px;
+  @include adaptive(mobile){
+      font-size: 21px;
+      padding: 0;
+  }
+}
+.rating_table{
+    display: inline-block;
+    vertical-align: top;
+    width: 80%;
+    @include adaptive(mobile){
+        height: 45px;
+        vertical-align: middle;
+    }
+}

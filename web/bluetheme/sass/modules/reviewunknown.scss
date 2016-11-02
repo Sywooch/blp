@@ -1,0 +1,27 @@
+.reviewunknown{
+    .registasagent_title{
+        margin-bottom: 0;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e6e6e6;
+        margin-bottom: 20px;
+    }
+    .registasagent_left{
+        @include adaptive(pad){
+            width: 19%;
+        }
+    }
+    .agentprofile_reviewsblock_medium_mark_name{
+        @include adaptive(pad){
+            display: inline-block;
+            padding: 0;
+        }
+        @include adaptive(mobile){
+            font-size: 14px;
+        }
+    }
+    .agentprofile_reviewsblock_medium_mark{
+        p{
+            font-size: 14px;
+        }        
+    }
+}

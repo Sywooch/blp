@@ -1,0 +1,294 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "<?php $this->title = \"Филиалы страховых компаний в горо де{$city}: - адреса, телефоны, режим работы.\" ?>\n<div id=\"companyspeedbar\" style=\"float:left;width:941px;\">\n    <div style=\"padding-left: 10px\">\n        <a href=\"/\">711</a> &gt;&gt; \n        <a href=\"/regions\">Регионы России</a> &gt;&gt; \n        <a href =\"/region/<?= $region['id'] ?>\"> <?= $region['name'] ?> </a> &gt;&gt; \n        <?= $city ?>\n    </div>\n</div>\n<div id =\"branch-wrap\">\n    <span class =\"branch-header\">Список филиалов страховых компаний в городе <?= $city ?>, <?= $region['name'] ?></span>\n    <table class ='city-list'>\n\n\n        <thead>\n            <tr>\n                <th>Компания</th>\n                <th>Тип офиса</th>\n                <th>Адрес</th>\n                <th>Часы работы</th>\n                <th>Телефоны</th>\n                <th>E-mail</th>\n            </tr>\n        </thead>\n        <tbody>\n            <?php foreach ($cities as $branch) : ?>\n                <tr>\n                    <td>\n                        <div class = 'company_name'><?= $branch['company_name'] ?></div>\n                        <?= $branch['branch'] ?>\n                    </td>\n                    <td>\n                        <?= $branch['functions'] ?>\n                    </td>\n                    <td>\n                        <?= $branch['city'] . \" \" . $branch['address'] ?><br/>\n                        <a href =\"/map/0/<?=$branch['id'] ?>\" target ='_blank'>показать на карте</a>\n                    </td>\n                    <td>\n                        <?= $branch['work_hours'] ?>\n                    </td>\n                    <td>\n                        <?= $branch['phones'] ?>\n                    </td>\n                    <td>\n                        <?= $branch['email'] ?>\n                    </td>\n                </tr>\n\n            <?php endforeach; ?>\n        </tbody>\n\n\n    </table>\n</div>\n\n<style>\n    #branch-wrap{\n        background: #fff;\n        width: 100%;\n        text-align: center;\n        padding: 10px;\n    }\n\n    #branch-wrap .branch-header {\n        font-size: 18px;\n        *font-weight: bold;\n\n    }\n    #branch-wrap .city-list {\n        width: 100%;\n        text-align: left;\n        margin: 5px;\n    }\n    #branch-wrap .city-list td {\n        padding: 5px 4px 5px 2px;\n        font-size: 12px;\n        background: #F7F7F7;\n    }\n    #branch-wrap .city-list th{\n        background: #0084EE;\n        padding: 5px 4px 5px 2px;\n        text-align: left;\n    }\n    #branch-wrap .city-list tr{\n        border-bottom: 1px black solid;\n    }\n    #branch-wrap .city-list .company_name{\n        text-decoration: underline;\n        font-size: 13px;\n    }\n\n</style>\n\n\n",
+			"file": "views/branches/city.php",
+			"file_size": 2825,
+			"file_write_time": 130930867421066240,
+			"settings":
+			{
+				"buffer_size": 2664,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "models/Address.php",
+			"settings":
+			{
+				"buffer_size": 7975,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/home/alexander307/Загрузки/a.charset.php",
+			"settings":
+			{
+				"buffer_size": 26666,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 146.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/var/www/711.ru/711yii",
+		"/var/www/711.ru/711yii/models",
+		"/var/www/711.ru/711yii/views",
+		"/var/www/711.ru/711yii/views/branches",
+		"/var/www/711.ru/711yii/web",
+		"/var/www/711.ru/711yii/web/css"
+	],
+	"file_history":
+	[
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "views/branches/city.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2664,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2664,
+								2664
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 432.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "models/Address.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7975,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 972.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/alexander307/Загрузки/a.charset.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 26666,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								121,
+								121
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "untitled.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

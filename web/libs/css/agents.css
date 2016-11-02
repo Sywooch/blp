@@ -1,0 +1,54 @@
+.them-logo-text{
+    font-size: 75px;
+    color: red;
+    float:left;
+}
+.them-logo-text-small{
+    font-size: 20px;
+    padding-top: 25px;
+}
+.them-block-shadow{
+    webkit-box-shadow: 4px 6px 28px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 6px 28px -8px rgba(0,0,0,0.75);
+    box-shadow: 4px 6px 28px -8px rgba(0,0,0,0.75);
+    padding: 20px;
+    border-radius: 15px;
+}
+.margin-right-10{
+    margin-right: 10px;
+}
+.them-remember-password{
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+.them-header-btn{
+    margin-top:50px;
+    float: right;
+}
+.them-register-agent-text{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 5px;
+}
+.them-agent-logo{
+    width: 185px;
+    margin: auto;
+    padding-bottom: 15px;
+}
+.them-center-reg-btn{
+
+}
+
+.btn-remove{
+    color: red;
+    padding: 3px 5px;
+    cursor: pointer;
+}
+.select-item{
+    border: 1px solid #B7B7B7;
+    border-radius: 5px;
+    padding: 5px;
+    float: left;
+    margin: 5px;
+}

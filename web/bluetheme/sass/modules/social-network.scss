@@ -1,0 +1,110 @@
+.social-networks {
+  margin-top: 35px;
+  padding-top: 30px;
+  border-top: 1px solid #e6e6e6;
+
+  @include clearfix-micro();
+
+  .item {
+    width: 65px;
+    height: 40px;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    line-height: 40px;
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    .twitter {
+      width: 18px;
+      height: 14px;
+      background: transparent;
+
+      .fill {
+        fill: #36BFF2;
+      }
+    }
+
+    .facebook {
+      width: 10px;
+      height: 18px;
+
+      .fill {
+        fill: #3a5899;
+      }
+    }
+
+    .vk {
+      width: 22px;
+      height: 12px;
+
+      .fill {
+        fill: #46719f;
+      }
+    }
+
+    .google {
+      width: 25px;
+      height: 15px;
+
+      .fill {
+        fill: #DB4E41;
+      }
+    }
+  }
+
+  .twitter-link {
+    border: 1px solid #36bff2;
+
+    &:hover {
+      background: #36bff2;
+
+      .fill {
+        fill: #fff;
+      }
+    }
+  }
+
+  .facebook-link {
+    border: 1px solid #3a5899;
+
+    &:hover {
+      background: #3a5899;
+
+      .fill {
+        fill: #fff;
+      }
+    }
+  }
+
+  .vk-link {
+    border: 1px solid #46719f;
+
+    &:hover {
+      background: #46719f;
+
+      .fill {
+        fill: #fff;
+      }
+    }
+  }
+
+  .google-link {
+    border: 1px solid #db4e41;
+
+    &:hover {
+      background: #db4e41;
+
+      .fill {
+        fill: #fff;
+      }
+    }
+  }
+
+  .twitter-link, .facebook-link, .vk-link, .google-link {
+    border-radius: 35px;
+  }
+}

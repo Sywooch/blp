@@ -1,0 +1,458 @@
+
+/*
+    Created on : 24.11.2015, 11:48:18
+    Author     : Alexander Kovalchuk
+*/
+/*
+.ymaps-2-1-34-zoom {
+    position: absolute;
+    top: 400px! important;
+    left: 10px;
+} */
+.ui-autocomplete{
+    max-height: 600px;
+    overflow-y: auto;
+    /* prevent horizontal scrollbar */
+    overflow-x: hidden;
+    position: absolute;
+}
+#ui-id-1 {
+    z-index: 2000;
+}
+#ui-id-2 {
+    z-index: 2000;
+}
+#ui-id-3 {
+    z-index: 2000;
+}
+#ui-id-4 {
+    z-index: 2000;
+}
+#ui-id-5 {
+    z-index: 2000;
+}
+#ui-id-6 {
+    z-index: 2000;
+}
+.ymaps-map{
+    position: absolute;
+    top: 0px;
+    *margin-bottom: -110px;
+}
+body {
+    background:  none;
+}
+#map-wrapper{
+    background: #fff;
+    width: 100%;
+    height: 100%;
+
+}
+
+.ymaps-2-1-31-balloon__layout, .ymaps-2-1-31-balloon__content, .ymaps-2-1-31-balloon__tail:after{
+    *background: #F5F5F5;
+}
+
+.del-from-search:hover{
+    background: #FFFFF7;
+}
+.ymaps-2-1-31-b-cluster-tabs{
+    width: 495px;
+}
+
+.ymaps-2-1-31-balloon__content{
+    *height: 500px !important;
+}
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#company-add{
+    position:   absolute;
+    top:        115px;
+    z-index:    1000;
+    background: #F5F5F5;
+    left:       500px;
+    width:      365px;
+    padding:    20px;
+    border-radius: 5px;
+    border:     1px #ABB1A8 solid;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding:    10px;
+    display:    none;
+}
+
+#company-add label.error {
+    color: red;
+}
+
+#company-add div{
+    padding: 5px 0;
+    position: relative;
+
+}
+#company-add td {
+    padding: 3px  2px;
+}
+#company-add input[type=text]{
+    font-size:  15px;
+    width:         343px;
+    height: 40px;
+    border-radius: 3px;
+    background: #fefcea; /* Для старых браузров */
+    background: linear-gradient(to top, #F5f5f5, #FFFFFF);
+    border: none;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    padding-left: 6px;
+
+}
+
+#company-add input[type=text].coordsadd{
+    width: 150px;
+    margin-right: 5px;
+}
+
+
+#company-add .hide-this{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ABB1A8;
+    border-radius: 3px;
+    box-shadow: none;
+    color:  #ABB1A8;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+}
+
+
+#company-add .hide-this:hover{
+    background: #ABB1A8;
+    border: 1px solid #ABB1A8;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+#company-add .add-branch{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #008000;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #008000;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+}
+#company-add .add-branch:hover{
+    background: #008000;
+    border: 1px solid #008000;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#company-add .refresh-coords{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #1e98ff;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #1e98ff;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+}
+
+#company-add .refresh-coords:hover{
+    background: #1e98ff;
+    color: #fff;
+}
+
+
+
+#company-add .show-on-map{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #837342;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #837342;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+}
+#company-add .show-on-map:hover{
+    background:  #837342;
+    color: #fff;
+}
+
+#map-wrapper .edit-branch-button {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #1e98ff;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #1e98ff;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+}
+#map-wrapper .non-active {
+    font-size: 18px;
+    color: red;
+    display: none;
+}
+
+#map-wrapper .closed {
+    text-decoration: line-through;
+}
+#map-wrapper .edit-branch-button:hover{
+    background: #1e98ff;
+    color: #fff;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#company-edit{
+    position:   absolute;
+    top:        115px;
+    z-index:    1000;
+    background: #F5F5F5;
+    left:       500px;
+    width:      365px;
+    padding:    20px;
+    border-radius: 5px;
+    border:     1px #ABB1A8 solid;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    padding:    10px;
+    display:    none;
+}
+
+#company-edit label.error {
+    color: red;
+}
+
+#company-edit div{
+    padding: 5px 0;
+    position: relative;
+
+}
+
+#company-edit div .arrow{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-left: 1px #ABB1A8 solid;
+    top: 5px;
+    right: 0px;
+    padding: 12px 0 0 13px;
+    font-size: 17px;
+    color: #008000;
+    border-radius: 0 3px 3px 0;
+
+}
+
+#company-edit div .arrow:hover{
+    color: red;
+    background: #F7EDD1;
+}
+#company-edit td {
+    padding: 3px  2px;
+}
+#company-edit input[type=text]{
+    font-size:  15px;
+    width:         343px;
+    height: 40px;
+    border-radius: 3px;
+    background: #fefcea; /* Для старых браузров */
+    background: linear-gradient(to top, #F5f5f5, #FFFFFF);
+    border: none;
+    box-shadow: 0 0 3px rgba(0,0,0,0.5);
+    padding-left: 6px;
+
+}
+
+#company-edit input[type=text].coordsadd{
+    width: 150px;
+    margin-right: 5px;
+}
+
+
+#company-edit .hide-this{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #ABB1A8;
+    border-radius: 3px;
+    box-shadow: none;
+    color:  #ABB1A8;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+}
+
+
+#company-edit .hide-this:hover{
+    background: #ABB1A8;
+    border: 1px solid #ABB1A8;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+#company-edit .add-branch{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #008000;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #008000;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+}
+#company-edit .add-branch:hover{
+    background: #008000;
+    border: 1px solid #008000;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #fff;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+#company-edit .refresh-coords{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #1e98ff;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #1e98ff;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+}
+
+#company-edit .refresh-coords:hover{
+    background: #1e98ff;
+    color: #fff;
+}
+
+
+
+#company-edit .show-on-map{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #837342;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #837342;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+}
+#company-edit .show-on-map:hover{
+    background:  #837342;
+    color: #fff;
+}
+
+#map-wrapper .edit-branch-button {
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #1e98ff;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #1e98ff;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+}
+
+#map-wrapper .edit-branch-button:hover{
+    background: #1e98ff;
+    color: #fff;
+}
+
+
+#payt4 {display: none;}
+[for="payt4"] {
+  display: inline-block;
+  padding: 7px;
+  border-radius: 100px;
+  background: rgba(0, 0, 0, .1);
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .4) inset, 0 1px 1px 0 rgba(255, 255, 255, .1);
+  text-shadow: 0 1px rgba(0, 0, 0, .5);
+  cursor: pointer;
+}
+[for="payt4"]:before, [for="payt4"]:after {
+  display: inline-block;
+  padding: 5px 20px;
+}
+[for="payt4"]:before {
+  content: "Закрыт";
+  border-radius: 100px 0 0 100px;
+  background: rgba(0, 0, 0, .3) linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,0));
+  color: rgba(0,0,0,.4);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .5) inset, 0 1px 0 rgba(255, 255, 255, .4);
+}
+[for="payt4"]:after {
+  content: "Открыт";
+  border-radius: 0 100px 100px 0;
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.3));
+  box-shadow: inset 0 1px 1px 0 rgba(255,255,255,.2), 0 1px 2px 0 rgba(0,0,0,.5);
+}
+#payt4:checked ~ [for="payt4"]:after {
+  background: rgba(0, 0, 0, .3) linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,0));
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .5) inset, 0 1px 0 rgba(255, 255, 255, .4);
+  color: rgba(0,0,0,.4);
+}
+#payt4:checked ~ [for="payt4"]:before {
+  box-shadow: inset 0 1px 1px 0 rgba(255,255,255,.2), 0 1px 2px 0 rgba(0,0,0,.5);
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,.3));
+  color: inherit;
+}
+
+#company-edit .delete{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #EC2B2B;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #EC2B2B;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+    margin-left: 5px;
+}
+
+#company-edit .delete:hover{
+    background: #EC2B2B;
+    color: #fff;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

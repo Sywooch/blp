@@ -1,0 +1,60 @@
+.titlereviewright-common{
+    color: #4d81ef;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.commentsreview-wrapper-common{
+    padding: 15px 0;
+}
+.commentreview-title-common{
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-style: italic;
+    text-align: right;
+    @include adaptive(mobile){
+        font-size: 15px;
+        line-height: 18px;
+    }
+}
+.commentreview-text-common{
+    font-size: 15px;
+    line-height: 20px;
+    @include adaptive(mobile){
+        font-size: 13px;
+        line-height: 17px;
+    }
+}
+.news_onpage_comments_notauthorised{
+    padding: 15px 0;
+}
+.contentdatereview-common{
+    font-size: 14px;
+    color: #b2b2b2;
+    line-height: 25px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    @include adaptive(mobile){
+        font-size: 12px;
+        line-height: 20px;
+    }
+    &+span{
+        color: #424955;
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+.authorReview-common{
+    line-height: 25px;
+    color: #424955;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.reviewsright-common{
+    border-bottom: 1px solid #e6e6e6;
+    margin-bottom: 10px;
+}

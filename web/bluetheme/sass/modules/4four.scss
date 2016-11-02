@@ -1,0 +1,274 @@
+.content_fourth{
+    position: relative;
+    @include adaptive(mobile){
+        margin-top: 0;
+    }
+}
+.content_fourth_block{
+    position: relative;
+}
+.content_fourth_top{
+    margin-bottom: 30px;
+    @include adaptive(mobile){
+        margin-bottom: 5px;
+    }
+    .content-row_gray{
+        width: 100%;
+        float: none;
+        height: 465px;
+        position: relative;
+        @include adaptive(pad){
+            &:last-child{
+                display: block;
+            }
+        }
+        @include adaptive(mobile){
+            &:last-child{
+                display: block;
+                height: 331px;
+            }
+        }
+        .info-block{
+            @include adaptive(pad){
+                bottom: 40px;
+            }
+        }
+    }
+    .content-row_gray_img{
+        border: none;
+        margin-bottom: 0;
+        padding-bottom: 40px;
+        @include adaptive(mobile){
+            padding-bottom: 35px;
+            padding-top: 55px;
+        }
+    }
+    .content-row_gray_title{
+        font-family : "sfuidisplay-semibold";
+        font-size : 36px;
+        line-height : 47.2px;
+        color : #B2B2B2;
+        color : rgb(178, 178, 178);
+        margin: 0;padding: 0;
+        width: 45%;
+        @include adaptive(pad){
+            width: 80%;
+            font-family : "sfuidisplay-semibold";
+            font-size : 36px;
+            line-height : 47.2px;
+            color : #B2B2B2;
+            color : rgb(178, 178, 178);
+        }
+        @include adaptive(mobile){
+            font-size: 21px;
+            width: 100%;
+            line-height: 26px;
+        }
+    }
+
+}
+
+.content_fourth_right_item{
+    float: right;
+    width: 870 / 1200 *100%;
+    display: block;
+    background-color: #fff;
+    padding: 40px 45px;
+    cursor: default;
+    @include adaptive(pad){
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+    }
+    @include adaptive(mobile){
+        width: 91%;
+        float: none;
+        padding: 30px 20px;
+        margin: 4.5%;
+    }
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+}
+.content_fourth_right_anchor{
+    float: right;
+    width: 72.5%;
+    height: 35px;
+    visibility: hidden;
+    &:first-child{
+        height: 1px;
+    }
+}
+.content_fourth_right_item_number{
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: 2px solid #4d81ef;
+    @include border(50%);
+    font-family : "sfuidisplay-semibold";
+    font-size : 21px;
+    color : #4D81EF;
+    color : rgb(77, 129, 239);
+    margin-left: 412 / 870 *100%;
+    @include adaptive(pad){
+        margin-bottom: 10px;
+    }
+    @include adaptive(mobile){
+        margin-bottom: 20px;
+        margin-left: 40%;
+        width: 36px;
+        height: 36px;
+        line-height: 36px;
+        font-size: 15px;
+    }
+}
+.content_fourth_right_item_title{
+    font-family : "sfuidisplay-semibold";
+    font-size : 26px;
+    color : #424955;
+    color : rgb(66, 73, 85);
+    margin-bottom: 20px;
+    @include adaptive(mobile){
+        font-size: 18px;
+    }
+}
+.content_fourth_right_item_about{
+    font-family : "sfuidisplay-regular";
+    font-size : 14px;
+    line-height : 20.8px;
+    color : #424955;
+    color : rgb(66, 73, 85);
+    width: 660/870*100%;
+    margin-bottom: 20px;
+    text-align: justify;
+    @include adaptive(pad){
+        width: 100%;
+    }
+    @include adaptive(mobile){
+        font-size : 12px;
+        line-height : 20.8px;
+        width: 100%;
+    }
+}
+.content_fourth_right_list{
+    float: left;
+    width: 300 / 1200 * 100%;
+    background-color: #fff;
+    padding: 30px 0;
+    span{
+        display: inline-block;
+        vertical-align: top;
+    }
+    @include adaptive(pad){
+        display: none;
+    }
+    @include adaptive(mobile){
+        display: none;
+    }
+}
+// .content_fourth_right_list_fixed{
+//     position: fixed;
+//     top: 35px;
+//     width: 300px;
+// }
+.content_fourth_right_list_absolute{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.content_fourth_right_list_link{
+    display: block;
+    margin-bottom: 10px;
+}
+.content_fourth_right_list__link_number{
+    width: 60px;
+    text-align: center;
+    font-family : "sfuidisplay-regular";
+    font-size : 14px;
+    color : #4D81EF;
+    color : rgb(77, 129, 239);
+    line-height: 24px;
+}
+.content_fourth_right_list__link_item{
+    width: 210px;
+    font-family : "sfuidisplay-regular";
+    font-size : 14px;
+    color : #424955;
+    color : rgb(66, 73, 85);
+    line-height: 24px;
+    &:hover{
+        color : #4D81EF;
+        color : rgb(77, 129, 239);
+    }
+}
+.content_fourth_right + .social_share{
+    float: right;
+    width: 870 / 1200 *100%;
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 0 28px;
+    margin: 0;
+    margin-bottom: 60px;
+    @include adaptive(pad){
+        width: 100%;
+        float: none;
+    }
+    @include adaptive(mobile){
+        width: 90%;
+        margin-right: 5%;
+        margin-bottom: 15px;
+        padding: 15px 0;
+        .social_share_icon_vk{
+            margin-bottom: 0;
+        }
+        .social_share_icon_google{
+            margin-bottom: 0;
+        }
+    }
+}
+.content_third_threeBlocks_fourth{
+    @include adaptive(mobile){
+        .content-row_gray{
+            display: none;
+            &:first-child{
+                display: block;
+            }
+        }
+        padding: 15px;
+        .content-row_gray_img{
+            padding-top: 50px;
+            padding-bottom: 55px;
+            img{
+                height: 88px;
+            }
+        }
+        .content-row_gray_title{
+            font-size: 16px;
+        }
+    }
+}
+.content_fourth{
+    .social_share{
+        float: right;
+        width: 72.5%;
+        margin-right: 0;
+        background-color: #fff;
+        height: 100px;
+        padding: 30px 0;
+        text-align: center;
+        @include adaptive(pad){
+            width: 100%;
+            float: none;
+            margin-left: 0;
+        }
+        @include adaptive(mobile){
+            float: none;
+            width: 100%;
+            margin-left: 0;
+            height: 160px;
+            margin-bottom: 10px;
+        }
+    }
+}

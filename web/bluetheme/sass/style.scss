@@ -1,0 +1,58 @@
+@import "modules/globalvars";
+@import "modules/normalize";
+@import "modules/fonts";
+@import "modules/mixins";
+@import "modules/header";
+@import "modules/footer";
+@import "modules/basic";
+@import "modules/forms";
+@import "modules/buttons";
+@import "modules/social-network";
+
+@import "modules/1one";
+@import "modules/2two";
+@import "modules/3three";
+@import "modules/4four";
+@import "modules/5five";
+@import "modules/6six";
+@import "modules/7seven";
+@import "modules/8leavefeedback";
+@import "modules/9authorization";
+@import "modules/10registration";
+@import "modules/11recallpassword";
+@import "modules/12companiesList";
+@import "modules/13reviews";
+@import "modules/14news";
+@import "modules/15personalarea.scss";
+@import "modules/16myfeedbacks.scss";
+@import "modules/17regions.scss";
+@import "modules/19officeslist.scss";
+@import "modules/20leaveTheCommentBlock.scss";
+@import "modules/404.scss";
+@import "modules/map.scss";
+@import "modules/agents.scss";
+@import "modules/agentsEntrance.scss";
+@import "modules/recallagentspassword.scss";
+@import "modules/registuseragent.scss";
+@import "modules/registasagent.scss";
+@import "modules/mydata.scss";
+@import "modules/agentprofile.scss";
+@import "modules/agentlk.scss";
+@import "modules/agentworkreview.scss";
+@import "modules/agentbids.scss";
+@import "modules/reviewunknown.scss";
+@import "modules/reviewscompany.scss";
+@import "modules/different.scss";
+@import "modules/widjets.scss";
+
+body {
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+div, input, form, p, h1, h2, h3, h4, h5, h6, header, footer {
+  box-sizing: border-box;
+}
+*{
+    word-wrap: break-word;
+}

@@ -1,0 +1,404 @@
+.companiesList{
+    padding: 40px;
+    background-color: #fff;
+    padding-bottom: 0;
+    margin-bottom: 40px;
+    @include adaptive(pad){
+        padding: 40px 20px;
+        padding-bottom: 0;
+    }
+    @include adaptive(mobile){
+        padding: 30px 20px;
+        padding-bottom: 0;
+    }
+}
+.companiesList_table{
+    padding-top: 30px;
+    border-top: 1px solid #e6e6e6;
+    @include adaptive(mobile){
+        padding-top: 0;
+    }
+    @include adaptive(mobile){
+        border-color: #fff;
+    }
+}
+.companiesList_alphabet{
+    padding-bottom: 40px;
+    @include adaptive(pad){
+        padding-bottom: 30px;
+    }
+    @include adaptive(mobile){
+        padding-bottom: 0;
+    }
+}
+.companiesList_title{
+    font-family : "sfuidisplay-semibold";
+    font-size : 36px;
+    line-height : 47.2px;
+    color : #424955;
+    color : rgb(66, 73, 85);
+    margin-bottom: 30px;
+    @include adaptive(mobile){
+        font-size: 21px;
+        line-height: 26px;
+        width: 70%;
+        margin-bottom: 15px;
+    }
+}
+.companiesList_search{
+    width: 410px;
+    display: inline-block;
+}
+.companiesList_searchField{
+    width: 410px;
+    padding-left: 20px;
+    line-height: 38px;
+    border: 1px solid #e6e6e6;
+    background-color: #f2f5f7;
+    @include border(5px);
+    font-family : "sfuidisplay-regular";
+    font-size : 14px;
+    color : #424955;
+    color : rgb(66, 73, 85);
+    margin-right: 30px;
+    &:focus{
+        border: 1px solid #e6e6e6;
+        outline: none;
+    }
+    &:active{
+        border-color: #e6e6e6;
+        outline: none;
+    }
+    @include adaptive(pad){
+        display: block;
+        margin-bottom: 30px;
+    }
+    @include adaptive(mobile){
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+
+.companiesList_iconSearch{
+    display: inline-block;
+    position: relative;
+    &::after{
+        content: '';
+        width: 18px;
+        height: 24px;
+        background-image: url("../img/search_gray_light.svg");
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 12px;
+        left: 383px;
+        @include adaptive(mobile){
+            left: 90%;
+        }
+    }
+    @include adaptive(mobile){
+        width: 100%;
+    }
+}
+.companiesList_letter{
+    text-transform: uppercase;
+    font-family : "sfuidisplay-regular";
+    font-size : 14px;
+    letter-spacing : 3.08px;
+    color : #424955;
+    color : rgb(66, 73, 85);
+    padding: 0 4px;
+    &:hover{
+        color: $blue;
+    }
+    @include adaptive(pad){
+        letter-spacing: 4.4px;
+    }
+    @include adaptive(mobile){
+        font-size : 10px;
+        line-height : 16.8px;
+        padding: 0;
+    }
+}
+.companiesList_head{
+    line-height: 60px;
+    background-color: #f3f6f8;
+    padding: 0 30/1200*100%;
+    @include adaptive(pad){
+        padding: 0 20/685*100%;
+    }
+    @include adaptive(mobile){
+        display: none;
+    }
+}
+.companiesList_head_item{
+    float: left;
+    font-family : "sfuidisplay-regular";
+    font-size : 14px;
+    color : #424955;
+    color : rgb(66, 73, 85);
+    position: relative;
+    &_after{
+        content: '';
+        width: 6px;
+        height: 6px;
+        background-image: url('../img/triangle_down.svg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        display: inline-block;
+        margin-left: 15px;
+    }
+}
+.companiesList_head .companiesList_head_name{
+    width: 16%;
+    margin-right: 17%;
+    @include adaptive(pad){
+        width: 29%;
+        margin-right: 0;
+    }
+}
+
+.companiesList_head .companiesList_head_license{
+    width: 17%;
+    margin-right: 25%;
+    @include adaptive(pad){
+        width: 34%;
+        margin-right: 0;
+    }
+}
+.companiesList_head_license_mobile{
+    line-height: 65px;
+    margin-right: 0;
+    width: 43%;
+    @include adaptive(mobile){
+        font-size: 12px;
+        clear: both;
+    }
+}
+.companiesList_head .companiesList_head_evaluation{
+    width: 14%;
+    margin-right: 3%;
+    @include adaptive(pad){
+        margin-right: 0;
+        width: 23%;
+    }
+}
+.companiesList_head_evaluation_mobile{
+    width: 43%;
+    margin-right: 0;
+}
+.companiesList_head .companiesList_head_feedbackNumber{
+    width: 8%;
+    @include adaptive(pad){
+        width: 14%;
+    }
+    @include adaptive(pad){
+        font-size: 12px;
+    }
+}
+
+.companiesList_table_row{
+    padding: 0 15px;
+    position: relative;
+    @include adaptive(pad){
+        height: 140px;
+        position: relative;
+    }
+    @include adaptive(mobile){
+        height: 295px;
+        margin-top: 45px;
+        padding: 0;
+    }
+}
+.companiesList_table_row_item{
+    line-height: 90px;
+    float: left;
+    display: block;
+    img{
+        vertical-align: middle;
+    }
+    @include adaptive(mobile){
+        line-height: 65px;
+        max-height: 65px;
+    }
+}
+.companiesList_table_row_img{
+    text-align: center;
+    width: 15%;
+    @include adaptive(pad){
+        width: 29%;
+        text-align: left;
+    }
+    @include adaptive(mobile){
+        width: 43%;
+        text-align: left;
+    }
+}
+.companiesList_table_row_name{
+    font-family : "sfuidisplay-regular";
+    font-size : 14px;
+    color : #4D81EF;
+    color : rgb(77, 129, 239);
+    width: 19%;
+    line-height: 22px;
+    padding-top: 33px;
+    height: 80px;
+    overflow: hidden;
+    padding-right: 2%;
+    @include adaptive(pad){
+        position: absolute;
+        left: 1%;
+        bottom: 15px;
+        width: 28%;
+        line-height: 15px;
+        text-align: left;
+    }
+    @include adaptive(mobile){
+        width: 55%;
+        text-align: left;
+        font-size: 12px;
+        height: 57px;
+    }
+}
+.companiesList_table_row_license{
+    font-size: 14px;
+    color : #424955;
+    color : rgb(66, 73, 85);
+    width: 27%;
+    line-height: 22px;
+    padding-top: 33px;
+    max-height: 77px;
+    overflow: hidden;
+    padding-right: 2%;
+    @include adaptive(pad){
+        width: 34%;
+    }
+    @include adaptive(mobile){
+        width: 50%;
+        margin-right: 0;
+        padding-top: 22px;
+        padding-right: 0;
+        max-height: 85px;
+        font-size: 12px;
+    }
+
+}
+.companiesList_table_row_status{
+    font-size: 14px;
+    width: 13.5%;
+    height: 90px;
+    line-height: 20px;
+    padding-top: 33px;
+    @include adaptive(pad){
+        position: absolute;
+        left: 30%;
+        bottom: 0;
+        width: 16%;
+        line-height: 15px;
+        padding-top: 0;
+        height: 30px;
+        width: 25%;
+    }
+    @include adaptive(mobile){
+        float: right;
+        width: 57.5%;
+        padding-top: 0;
+        line-height: 22px;
+        height: 25px;
+    }
+}
+.companiesList_head_evaluation_mobile{
+    line-height: 55px;
+    font-size: 12px;
+}
+.companiesList_table_row_stars{
+    width: 18%;
+    @include adaptive(pad){
+        width: 25%
+    }
+    @include adaptive(mobile){
+        width: 50%;
+        line-height: 55px;
+    }
+}
+.companiesList_table_row_stars_counter{
+    font-size: 14px;
+    @include adaptive(mobile){
+        font-size: 12px;
+    }
+}
+.companiesList_table_row_item_feedbackNumber{
+    font-family : "sfuidisplay-regular";
+    font-size : 14px;
+    color : #424955;
+    color : rgb(66, 73, 85);
+    @include adaptive(mobile){
+        line-height: 25px;
+        width: 50%;
+    }
+    @include adaptive(mobile){
+        font-size: 12px;
+    }
+}
+.companiesList_head_feedbackNumber_mobile{
+    width: 43%;
+    line-height: 25px;
+    font-size: 12px;
+}
+
+.companiesList_table_row_status_go{
+    color : #42D79E;
+}
+.companiesList_table_row_status_pause{
+    color: #EECE1D;
+}
+.companiesList_table_row_status_stop{
+    color: #FB5C86;
+}
+.companiesList_table_line{
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+    &:last-child{
+        margin-bottom: 45px;
+    }
+}
+#companiesList_sortBy{
+    display: none;
+    @include adaptive(mobile){
+        display: block;
+    }
+}
+.companiesList_letterList{
+    display: inline-block;
+    @include adaptive(mobile){
+        width: 6%;
+        position: absolute;
+        right: 0;
+        z-index: 5000;
+        text-align: center;
+    }
+}
+.companiesList_letterList_fixed{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 5000;
+}
+.companiesList_table_row_bigLetter{
+    line-height: 45px;
+    text-transform: uppercase;
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    font-family : "sfuidisplay-semibold";
+    font-size : 21px;
+    color : #424955;
+    color : rgb(66, 73, 85);
+    background-color: #eaedef;
+    border: 1px solid #e6e6e6;
+    border-left: none;
+    border-right:none;
+    top: -45px;
+    padding-left: 25px;
+}

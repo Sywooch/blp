@@ -1,0 +1,313 @@
+ #review_list{
+     width: 69%;
+     @include adaptive(pad){
+         width: 100%;
+         padding-bottom: 30px;
+         margin-bottom: 20px;
+     }
+     @include adaptive(mobile){
+         width: 100%;
+         padding-bottom: 15px;
+
+     }
+     .content_left_feedback{
+         margin-bottom: 20px;
+     }
+     .content_left_feedback_title{
+         width: 97%;
+         float: none;
+         border: none;
+     }
+     .content_left_feedback_total{
+         float: left;
+         font-size: 14px;
+         @include adaptive(mobile){
+             float: none;
+             width: 100%;
+         }
+     }
+     .content_left_feedback-item--wrapper_content_whos{
+         max-width: 200px;
+         @include adaptive(mobile){
+             line-height: 35px;
+             max-width: 130px;
+             text-overflow: ellipsis;
+             overflow: hidden;
+         }
+     }
+     .content_left_feedback-item--wrapper_content_city{
+         max-width: 200px;
+         @include adaptive(mobile){
+             line-height: 35px;
+             max-width: 130px;
+             text-overflow: ellipsis;
+             overflow: hidden;
+         }
+     }
+ }
+ .content_left_feedback_leavefeedback{
+     display: block;
+     float: right;
+     color: #4883f0;
+     font-size: 14px;
+     width: 175px;
+     text-align: center;
+     &:hover{
+         text-decoration: none;
+     }
+     @include adaptive(mobile){
+         float: none;
+         margin: 20px auto;
+         width: 100%;
+         text-align: left;
+
+     }
+ }
+.feedback_about_this_company_title{
+        display: inline-block;
+        margin-right: 1%;
+        font-size: 14px;
+        width: 28%;
+        @include adaptive(pad){
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        @include adaptive(mobile){
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+}
+.feedback_about_this_company{
+    margin: 35px;
+    margin-top: 0;
+    border-bottom: 1px solid #e6e6e6;
+    @include adaptive(mobile){
+        margin: 0;
+        padding: 0 15px;
+    }
+}
+.feedback_about_this_company_form{
+    display: inline-block;
+    width: 70%;
+    @include adaptive(pad){
+        width: 100%;
+    }
+    @include adaptive(mobile){
+        width: 100%;
+    }
+}
+.feedback_about_this_company_form_select{
+    display: inline-block;
+    margin-right: 1%;
+    @include adaptive(mobile){
+        width: 100%;
+        margin: 0;
+    }
+    select{
+        height: 40px;
+        margin-left: 1%;
+        @include adaptive(pad){
+            margin-left: 0;
+        }
+        @include adaptive(mobile){
+            margin-bottom: 10px;
+        }
+    }
+}
+.feedback_about_this_company_form_btn{
+    width: 175px;
+    background-color: #42d69d;
+    @include border(20px);
+    line-height: 38px;
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    float: right;
+    &:hover{
+        background-color: #fff;
+        border: 1px solid #42d69d;
+        color: #42d69d;
+        line-height: 36px;
+    }
+    &:active{
+        background-color: #3cc28e;
+        color: white;
+    }
+    @include adaptive(pad){
+        // float: none;
+    }
+    @include adaptive(mobile){
+        float: none;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+.last_feedbacks_comments{
+    float: right;
+    width: 30%;
+    padding: 20px;
+    background-color: #fff;
+    padding-top: 0;
+    @include adaptive(pad){
+        width: 49%;
+        float: right;
+    }
+    @include adaptive(mobile){
+        float: none;width: 100%;
+        margin-bottom: 15px;
+    }
+}
+.last_feedbacks_comments_title{
+    line-height: 54px;
+    font-size: 18px;
+    color: #424955;
+    font-family: "sfuidisplay-light";
+    text-align: justify;
+    @include adaptive(mobile){
+        font-size: 16px;
+        text-align: center;
+    }
+}
+.last_feedbacks_comments_item{
+    padding: 10px 0;
+    border-bottom: 1px solid #e6e6e6;
+}
+.last_feedbacks_comments_item_date{
+    font-size: 14px;
+    color: #b2b2b2;
+    line-height: 25px;
+    text-align: right;
+    float: right;
+}
+.last_feedbacks_comments_item_person{
+    line-height: 25px;
+    color: #424955;
+    font-size: 14px;
+    width: 72%;
+    margin-bottom: 10px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    img{
+        height: 20px;
+        vertical-align: middle;
+        margin-right: 3%;
+    }
+}
+.last_feedbacks_comments_item_iconComment{
+    line-height: 25px;
+    display: inline-block;
+    vertical-align: top;
+    width: 7%;
+    margin-right: 1%;
+    img{
+        width: 20px;
+        height: 16px;
+    }
+}
+.last_feedbacks_comments_item_comment{
+    display: inline-block;
+    width: 90%;
+    font-size: 14px;
+    color: #424955;
+    line-height: 18px;
+    max-height: 18*4px;
+    overflow: hidden;
+    @include adaptive(mobile){
+        font-size: 13px;
+    }
+}
+.last_feedbacks_comments_item_from{
+    font-size: 13px;
+    color: #424955;
+    line-height: 21px;
+    margin-top: 10px;
+    @include adaptive(mobile){
+        font-size: 12px;
+    }
+    a{
+        color: #4883f0;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    img{
+        vertical-align: middle;
+    }
+}
+.insurance_companies_list{
+    float: right;
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 0;
+    margin-bottom: 30px;
+    @include adaptive(pad){
+        float: left;
+        width: 49%;
+    }
+    @include adaptive(mobile){
+        float: none;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+}
+.counter{
+    color: #424955;
+}
+.insurance_companies_list_title{
+    display: block;
+    text-align: center;
+    line-height: 54px;
+    font-size: 20px;
+    color: #424955;
+    font-family: "sfuidisplay-light";
+    border-bottom: 1px solid #b2b2b2;
+    margin-bottom: 20px    ;
+    &:hover{
+        color: #4883f0;
+    }
+    @include adaptive(mobile){
+        font-size: 16px;
+    }
+}
+.insurance_companies_list_head{
+    padding-bottom: 10px;
+    width: 100%;
+    font-size: 14px;
+    &:nth-child(2){
+        border-bottom: 1px solid #e6e6e6;
+    }
+    @include adaptive(mobile){
+        font-size: 12px;
+    }
+}
+.insurance_companies_list_head_left{
+    width: 70%;
+}
+.insurance_companies_list_head_left_link{
+    color: #4883f0;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.insurance_companies_list_head_right{
+    width: 30%;
+    text-align: center;
+}
+.insurance_companies_list_body{
+    font-size: 14px;
+    @include adaptive(mobile){
+        font-size: 12px;
+    }
+    .insurance_companies_list_head_left{
+        padding: 10px 0;
+        text-align: left;
+    }
+    .insurance_companies_list_head_right{
+        text-align: center;
+    }
+}

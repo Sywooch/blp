@@ -1,0 +1,598 @@
+/* 
+    Created on : 23.10.2015, 11:49:45
+    Author     : Alexander Kovalchuk
+*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~main consultation page~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#admin-side{
+    background:         #FFF;
+    padding:            20px;
+    position: relative;
+}
+
+#admin-side  .redir-experts {
+    float: right;
+    position: absolute;
+    display: inline-block;
+    background: #f7f7f7 none repeat scroll 0 0;
+    border: 1px solid #2686d5;
+    color: #2686d5;
+    top: 20px;
+    right: 100px;
+    padding: 5px 10px;
+    font-size: 16px;
+
+}
+
+
+#admin-side  .redir-experts:hover{
+    color: #f7f7f7;
+    background: #2686d5 none repeat scroll 0 0;
+    border: 1px solid #f7f7f7;
+    
+}
+
+#admin-side .consultation-index h2 {
+    color:              black;
+    font-size:          20px;  
+}
+
+#admin-side .consultation-index .add-section{
+    text-decoration:  underline;
+    cursor: pointer;
+}
+
+#admin-side .consultation-index .add-section:hover{
+    color:            green;
+}
+#admin-side .consultation-index table.spikers {
+    border:             none;
+}
+
+#admin-side .consultation-index table.spikers th {
+    border:             none;
+    border-bottom:      1px black solid;
+}
+
+#admin-side .consultation-index table.spikers td {
+    border:             none;
+    padding:            2px;
+    min-width:          80px;
+
+}
+
+#admin-side .consultation-index table.spikers 
+td:nth-of-type(2),
+td:nth-of-type(4),
+th:nth-of-type(2),
+th:nth-of-type(4)
+{
+    text-align:         center;
+}
+
+
+#admin-side table.spikers tbody tr:nth-of-type(1) td .arr-wrap:nth-of-type(1){
+    display: none;
+}
+#admin-side table.spikers tbody tr:nth-last-of-type(1) td .arr-wrap:nth-last-of-type(1){
+    display: none;
+}
+
+#admin-side .consultation-index table.spikers td .arr{
+    font-size:          20px;
+    color:              #a7cb4e;
+    text-shadow:        -1px 0 black, 0 1px black,
+                        1px 0 black, 0 -1px black
+}
+
+#admin-side .consultation-index table.spikers td .edit-section:hover{
+    color:              green;
+}
+
+#admin-side .consultation-index table.spikers td .delete-section{
+    text-decoration:  underline;
+    cursor: pointer;
+}
+
+#admin-side .consultation-index table.spikers td .delete-section:hover{
+    color:            red;
+}
+#admin-side .consultation-index table.spikers td .arr:hover{
+    font-size:          20px;
+    color:              #bc2a15;
+    cursor:             pointer;
+}
+
+#admin-side .consultation-index table.add-section-table {
+    border:             1px black solid;
+    *padding:            5px;
+    width:              100%;
+    margin-top:         10px;
+    background:         whitesmoke;
+    display:            none;
+
+}
+
+#admin-side .consultation-index table.add-section-table td{
+    padding:            5px;
+}
+#admin-side .consultation-index table.add-section-table td:nth-of-type(1) {
+    text-align:         right;
+    width:              200px;
+}
+
+#admin-side .consultation-index table.add-section-table td:nth-of-type(2) {
+    width:              400px;
+}
+
+#admin-side .consultation-index table.add-section-table .error {
+    color:              red;
+}
+
+#admin-side .consultation-index table.add-section-table input[type=text],textarea {
+    width:              100%;
+    background:         #d7e9e1;
+}
+#admin-side .consultation-index table.add-section-table .add-section-button{
+    border:             1px solid green;
+    color:              green;
+    border-radius:      3px;
+    text-align:         center;
+    width:              100px;
+    padding:            3px 1px;
+    background:         #fff;
+}
+
+#admin-side .consultation-index table.add-section-table .add-section-cancel{
+    border:             1px solid red;
+    border-radius:      3px;
+    color:              red;
+    margin-left:        50px;
+    text-align:         center;
+    width:              100px;
+    padding:            3px 1px;
+}
+
+#admin-side .slide-down, .slide-up {
+    cursor: pointer;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~main consultation edit section page~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+#admin-side{
+    background:         #FFF;
+    padding:            20px;
+}
+
+
+#admin-side .consultation-edit-section h2 {
+    color:              black;
+    font-size:          20px;  
+}
+
+#admin-side .consultation-edit-section .add-section{
+    text-decoration:  underline;
+}
+#admin-side .consultation-edit-section table.answers{
+    border:             none;
+}
+
+#admin-side .consultation-edit-section table.answers th {
+    border:             none;
+    border-bottom:      1px black solid;
+    min-width:          80px;
+}
+
+#admin-side .consultation-edit-section table.answers td {
+    border:             none;
+    padding:            2px;
+    min-width:          80px;
+
+}
+
+#admin-side .consultation-edit-section table.answers 
+td:nth-of-type(3),
+th:nth-of-type(3)
+
+{
+    text-align:         center;
+}
+
+#admin-side .consultation-edit-section table.answers .question{
+    border-top: 1px black solid;
+}
+
+
+#admin-side .consultation-edit-section table.answers .edit-link{
+    color: green;
+}
+
+
+#admin-side .consultation-edit-section table.answers .remove-link:hover{
+    text-decoration: underline;
+    color: red;
+    cursor: pointer;
+}
+#admin-side .consultation-edit-section table.answers .answer, .read-more{
+    display: none;
+}
+
+#admin-side .consultation-edit-section table.edit-section-table {
+    border:             1px black solid;
+    padding:            5px;
+    width:              100%;
+    margin-top:         10px;
+    background:         whitesmoke;
+    
+
+}
+
+#admin-side .consultation-edit-section table.edit-section-table td{
+    padding:            5px;
+}
+#admin-side .consultation-edit-section table.edit-section-table td:nth-of-type(1) {
+    text-align:         right;
+}
+
+#admin-side .consultation-edit-section table.edit-section-table td:nth-of-type(3) {
+    width:              200px;
+}
+
+#admin-side .consultation-edit-section table.edit-section-table .error {
+    color:              #e71818;
+}
+
+#admin-side .consultation-edit-section table.edit-section-table input[type=text],textarea {
+    width:              100%;
+    background:         #d7e9e1;
+}
+#admin-side .consultation-edit-section table.edit-section-table .add-section-button{
+    border:             1px solid green;
+    color:              green;
+    border-radius:      3px;
+    text-align:         center;
+    width:              100px;
+    padding:            3px 1px;
+}
+
+#admin-side .consultation-edit-section table.edit-section-table .add-section-cancel{
+    border:             1px solid red;
+    border-radius:      3px;
+    color:              red;
+    margin-left:        50px;
+    text-align:         center;
+    width:              100px;
+    padding:            3px 1px;
+}
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#admin-side table.edit-answer-form {
+    border:             1px black solid;
+    padding:            5px;
+    width:              100%;
+    margin-top:         10px;
+    background:         whitesmoke;
+    
+
+}
+
+#admin-side .consultation-edit-section table.edit-answer-form td{
+    padding:            5px;
+}
+#admin-side .consultation-edit-section table.edit-answer-form td:nth-of-type(1) {
+    text-align:         right;
+}
+
+
+#admin-side .consultation-edit-section table.edit-answer-form td:nth-of-type(3) {
+    width:          100px;
+}
+
+#admin-side .consultation-edit-section table.edit-answer-form input[type=text],textarea {
+    width:              100%;
+    background:         #d7e9e1;
+}
+#admin-side .consultation-edit-section table.edit-answer-form .add-section-button{
+    border:             1px solid green;
+    color:              green;
+    border-radius:      3px;
+    text-align:         center;
+    width:              100px;
+    padding:            3px 1px;
+}
+
+#admin-side .consultation-edit-section table.edit-answer-form .add-section-cancel{
+    border:             1px solid red;
+    border-radius:      3px;
+    color:              red;
+    margin-left:        50px;
+    text-align:         center;
+    width:              100px;
+    padding:            3px 1px;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~>>>>>>>>END main consultation edit section page~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EDIT EXPERTS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#admin-side{
+    background:         #FFF;
+    padding:            20px;
+}
+
+#admin-side .experts-edit-section{
+
+}
+
+#admin-side .experts-edit-section h2 {
+    color:              black;
+    font-size:          20px;  
+}
+
+#admin-side .experts-edit-section .add-expert{
+    text-decoration:    underline;
+    cursor:             pointer;
+}
+
+#admin-side .experts-edit-section .add-expert:hover{
+    color:              green;
+}
+
+#admin-side .experts-edit-section .add-expert-cancel{
+    text-decoration:    underline;
+    cursor:             pointer;
+    display:            none;
+}
+
+#admin-side .experts-edit-section .add-expert-cancel:hover{
+    color:              red;
+}
+#admin-side .experts-edit-section table.experts {
+    border:             none;
+}
+
+#admin-side .experts-edit-section table.experts th {
+    border:             none;
+    border-bottom:      1px black solid;
+}
+
+#admin-side .experts-edit-section table.experts td {
+    border:             none;
+    padding:            2px;
+    min-width:          110px;
+
+}
+
+#admin-side .experts-edit-section table.experts 
+td:nth-of-type(2),
+td:nth-of-type(4),
+th:nth-of-type(2),
+th:nth-of-type(4)
+{
+    text-align:         center;
+}
+
+#admin-side .experts-edit-section table.experts .edit-link:hover {
+  color:                green;  
+}
+
+#admin-side .experts-edit-section table.experts .hide-link {
+  color:                red;
+  display:              none;
+}
+
+#admin-side .experts-edit-section table.experts .delete-link:hover {
+  color:                red;  
+}
+
+#admin-side .experts-edit-section table.add-expert-table {
+    border:             1px black solid;
+    padding:            5px;
+    width:              100%;
+    margin-top:         10px;
+    background:         whitesmoke;
+    display:            none;
+
+}
+
+
+#admin-side .experts-edit-section table.add-expert-table .avatar{
+    display:        block;
+    width:          60px;
+    height:         60px;
+    border-radius:  50%;
+}
+
+
+#admin-side .experts-edit-section table.add-expert-table td{
+    padding:            5px;
+}
+
+
+#admin-side .experts-edit-section table.add-expert-table td:nth-of-type(1) {
+    text-align:         right;
+    vertical-align:     top;
+    width:              200px;
+}
+
+#admin-side .experts-edit-section table.add-expert-table td:nth-of-type(2) {
+    width:          450px;
+}
+
+#admin-side .experts-edit-section table.add-expert-table input[type=text],textarea {
+    width:              100%;
+    background:         #d7e9e1;
+}
+
+#admin-side .experts-edit-section table.add-expert-table input.changepass {
+    width:              80%;
+    
+}
+
+
+#admin-side .experts-edit-section table.add-expert-table input[type=radio] {
+    display:            inline;
+}
+#admin-side .experts-edit-section table.add-expert-table input.add-section-button{
+    border:             1px solid green;
+    color:              green;
+    border-radius:      3px;
+    text-align:         center;
+    width:              100px;
+    padding:            3px 1px;
+    background:         #F5F5F5;
+}
+
+#admin-side .experts-edit-section table.add-expert-table input.add-section-button:hover{
+    border:             1px solid red;
+    border-radius:      3px;
+    color:              red;
+    text-align:         center;
+    width:              100px;
+    padding:            3px 1px;
+}
+
+#admin-side .experts-edit-section table.add-expert-table .error{
+    color:              red;
+}
+
+#admin-side .experts-edit-section table.add-expert-table tr td .avatar-wrap{
+    position: relative;
+}
+
+#admin-side .experts-edit-section table.add-expert-table tr td .load-avatar{
+    *display:        block;
+    width:          60px;
+    height:         60px;
+    border-radius:  50%;
+    position: absolute;
+    display: none;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+    *z-index: 10;
+
+}
+
+#admin-side .experts-edit-section table.add-expert-table tr td .delete-avatar{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: #e11919;
+    left: 43px;
+    opacity: 1;
+    padding: 1px 4px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    
+}
+
+#admin-side .experts-edit-section table.add-expert-table tr td .delete-avatar:hover{
+    background: #e11919;;
+    border: none;
+    
+    color: #fff;
+}
+
+
+
+/*~~~~~~~~~~~~~~~~~edit expert popup~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+ table.edit-expert-table td{
+    padding:            5px;
+}
+
+
+ table.edit-expert-table td:nth-of-type(1) {
+    text-align:         right;
+    vertical-align:     top;
+}
+
+ table.edit-expert-table td:nth-of-type(2) {
+    width:          650px;
+}
+ table.edit-expert-table input[type=text],textarea {
+    width:              100%;
+    background:         #d7e9e1;
+}
+ table.edit-expert-table .edit-expert-button{
+    border:             1px solid green;
+    color:              green;
+    border-radius:      3px;
+    text-align:         center;
+    width:              100px;
+    padding:            3px 1px;
+}
+
+ table.edit-expert-table .edit-expert-cancel{
+    border:             1px solid red;
+    border-radius:      3px;
+    color:              red;
+    margin-left:        50px;
+    text-align:         center;
+    width:              100px;
+    padding:            3px 1px;
+}
+
+table.edit-expert-table .error{
+    color:              red;
+}
+
+
+table.edit-expert-table tr td .avatar{
+    display:        block;
+    width:          60px;
+    height:         60px;
+    border-radius:  50%;
+
+}
+
+table.edit-expert-table tr td .avatar-wrap{
+    position: relative;
+}
+
+table.edit-expert-table tr td .load-avatar{
+    *display:        block;
+    width:          60px;
+    height:         60px;
+    border-radius:  50%;
+    position: absolute;
+    display: none;
+    opacity: 0.8;
+    top: 0px;
+    left: 0px;
+    *z-index: 10;
+
+}
+
+table.edit-expert-table tr td .delete-avatar{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: #e11919;
+    left: 43px;
+    opacity: 1;
+    padding: 1px 4px 0;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    
+}
+
+table.edit-expert-table tr td .delete-avatar:hover{
+    background: #e11919;;
+    border: none;
+    
+    color: #fff;
+}
+

@@ -1,0 +1,267 @@
+.wrapper {
+  min-height: 100%;
+  text-align: left;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #e5e5e5 repeat-x 50% 64px;
+  font-family: OpenSansRegular;
+  line-height: 20px;
+  width: 1180px;
+}
+
+.p {
+  padding-bottom: 10px;
+}
+
+.m {
+  margin-bottom: 10px;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.padding-right-3px {
+  padding-right: 3px !important;
+}
+
+.padding-left-3px {
+  padding-left: 3px !important;
+}
+
+.no-padding-left {
+  padding-left: 0 !important;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+.no-padding-right {
+  padding-right: 0 !important;
+}
+
+.margin-right-10 {
+  margin-right: 10px;
+}
+
+.padding-right-10 {
+  padding-right: 10px;
+}
+
+.them-text-content {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/*h1{
+    font-size: 18px;
+    margin-bottom: 20px;
+}*/
+.categories-block {
+  position: relative;
+  top: 5px;
+  height: 60px;
+}
+
+.them-tabs a {
+  text-decoration: none !important;
+  color: black;
+}
+.them-tabs li {
+  float: left;
+  border: 3px solid;
+  border-radius: 5px;
+  list-style-type: none;
+  padding: 8px;
+  margin: 5px;
+}
+.them-tabs li.active a {
+  color: white !important;
+}
+
+.news {
+  min-height: 80px;
+  max-height: 200px;
+  overflow: hidden;
+  background-color: #F6FBFF;
+  margin-bottom: 5px;
+  padding: 5px;
+  border: 1px solid #DCEFFF;
+  border-radius: 10px;
+}
+
+.them-news-logo, .them-news {
+  float: left;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 2px solid #F1F1F1;
+  overflow: hidden;
+  background-color: #F1F1F1;
+}
+
+.name_news_all {
+  margin-left: 85px;
+}
+.name_news_all a {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+.name_news_all a a:hover {
+  text-decoration: underline;
+}
+
+.them-float-left {
+  float: left;
+}
+
+.them-float-right {
+  float: right;
+}
+
+.them-content {
+  background: white;
+  border-radius: 6px 6px 0px 0px;
+  margin-bottom: 10px;
+  font-family: OpenSansRegular;
+  font-size: 14px;
+}
+
+.review-date {
+  float: right;
+  color: #999999;
+  font-style: italic;
+}
+
+.widget-block-white {
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.widget-block {
+  margin-bottom: 10px;
+  background-color: none;
+  border-radius: 4px;
+  -webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.widget-header a {
+  text-decoration: none;
+}
+
+.widget-header-red {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  background-image: -o-linear-gradient(bottom, #FF4848 0%, #CE0101 100%);
+  background-image: -moz-linear-gradient(bottom, #FF4848 0%, #CE0101 100%);
+  background-image: -webkit-linear-gradient(bottom, #FF4848 0%, #CE0101 100%);
+  background-image: -ms-linear-gradient(bottom, #FF4848 0%, #CE0101 100%);
+  background-image: linear-gradient(to bottom, #FF4848 0%, #CE0101 100%);
+}
+
+.widget-header-red:hover {
+  text-decoration: underline;
+  background-image: -o-linear-gradient(bottom, #FF7D7D 0%, #CE0101 100%);
+  background-image: -moz-linear-gradient(bottom, #FF7D7D 0%, #CE0101 100%);
+  background-image: -webkit-linear-gradient(bottom, #FF7D7D 0%, #CE0101 100%);
+  background-image: -ms-linear-gradient(bottom, #FF7D7D 0%, #CE0101 100%);
+  background-image: linear-gradient(to bottom, #FF7D7D 0%, #CE0101 100%);
+}
+
+.widget-header-black {
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 4px 4px 0 0;
+  cursor: pointer;
+  background-image: -o-linear-gradient(bottom, #000000 0%, #000000 100%);
+  background-image: -moz-linear-gradient(bottom, #000000 0%, #000000 100%);
+  background-image: -webkit-linear-gradient(bottom, #000000 0%, #000000 100%);
+  background-image: -ms-linear-gradient(bottom, #000000 0%, #000000 100%);
+  background-image: linear-gradient(to bottom, #000000 0%, #000000 100%);
+}
+
+.widget-content {
+  font-size: 14px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.review-company {
+  padding-bottom: 15px;
+}
+
+.review-btns {
+  padding-bottom: 10px;
+}
+
+.review-text {
+  padding-bottom: 10px;
+}
+
+.rating {
+  padding-bottom: 10px;
+}
+
+.rating-count {
+  min-width: 30px;
+}
+
+.comment-block {
+  margin-bottom: 10px;
+  border-bottom: 1px dotted;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+.img-width-100p img {
+  width: 100%;
+}
+
+.fixed-container {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.map-header {
+  background-color: white;
+  opacity: 0.8;
+  height: 65px;
+}
+
+#login_form {
+  /*background-color: white;*/
+}
+.search-res {
+    max-height: 200px;
+    min-height: 50px;
+    overflow: hidden;
+    background-color: #fbfbfb;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid #f2f4f7;
+    border-radius: 5px;
+}

@@ -1,0 +1,208 @@
+.agentsentrance{
+    margin: 0 auto;
+    width: 70%;
+    border: 2px solid #737373;
+    @include border(5px);
+    margin-bottom: 30px;
+    background-color: #fff;
+    @include adaptive(mobile){
+        width: 100%;
+        border: none;
+        margin: 0;
+    }
+}
+.agentsentrance_title{
+    font-family: "sfuidisplay-semibold";
+    font-size: 26px;
+    color: #424955;
+    padding: 30px;
+    margin: 0 10% 30px;
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 20px;
+    padding-left: 24%;
+    @include adaptive(mobile){
+        margin: 0;
+        font-size: 19px;
+        line-height: 24px;
+        margin-bottom: 10px;
+        padding: 10px;
+    }
+}
+.agentsentrance_block{
+    font-size: 0;
+    margin: 0 10% 20px;
+    @include adaptive(mobile){
+        margin: 0;
+        padding-bottom: 20px;
+    }
+}
+.agentsentrance_form_block{
+    display: inline-block;
+    font-size: 0;
+    vertical-align: top;
+}
+.agentsentrance_form_blockleft{
+    width: 30%;
+}
+.agentsentrance_form_blockright{
+    width: 65%;
+}
+.agentsentrance_form_blockleft_item{
+    font-size: 19px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    text-align: right;
+    font-family: "sfuidisplay-regular";
+    padding-right: 30px;
+    @include adaptive(pad){
+        font-size: 16px;
+    }
+    @include adaptive(mobile){
+        display: block;
+        width: 100%;
+        font-size: 14px;
+        padding-right: 5px;
+    }
+}
+.agentsentrance_input{
+    width: 100%;
+    line-height: 38px;
+    padding-left: 20px;
+    font-family: "sfuidisplay-regular";
+    font-size: 14px;
+    color: #424955;
+    color: #424955;
+    margin-bottom: 10px;
+    outline: none;
+    border: 1px solid #e6e6e6;
+    background-color: #f2f5f7;
+    @include border(4px);
+    &:focus{
+        border: 1px solid #42d69d;
+    }
+    &:active{
+        border: 1px solid #42d69d;
+    }
+    @include adaptive(mobile){
+        display: block;
+        width: 100%;
+        font-size: 14px;
+    }
+}
+#agentsentrance_form_blockright_rememberagent{
+    display: none;
+    &:checked + .agentsentrance_form_blockright_rememberagent::before{
+        background-image: url("/bluetheme/img/agree_swash.svg")
+    }
+}
+.agentsentrance_form_blockright_rememberagent{
+    font-size: 18px;
+    color: #424955;
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+    width: 100%;
+    line-height: 40px;
+    margin-bottom: 20px;
+    @include adaptive(pad){
+        font-size: 14px
+    }
+    @include adaptive(mobile){
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        display: block;
+        width: 17px;
+        height: 17px;
+        background-color: #f2f5f7;
+        border: 1px solid #e6e6e6;
+        @include border(3px);
+        left: -2px;
+        top: 8px;
+        @include adaptive(pad){
+            top: 9px;
+        }
+        &:hover{
+            background-color: #dee1e3;
+            transition: all 0.3s;
+        }
+    }
+}
+.agentsentrance_form_blockright_links{
+    font-size: 18px;
+    line-height: 40px;
+    color: #4d81ef;
+    text-decoration: underline;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    padding-left: 10%;
+    &:first-child{
+        margin-bottom: 20px;
+    }
+    @include adaptive(pad){
+        font-size: 14px
+    }
+    @include adaptive(mobile){
+        font-size: 14px;
+        width: 100%;
+        display: block;
+        line-height: 24px;
+        margin-bottom: 0;
+        &:first-child{
+            margin-bottom: 0px;
+        }
+    }
+}
+.agentsentrance_form_block_button{
+    background-color: #42d69d;
+    @include border(25px);
+    width: 100%;
+    margin-right: 10%;
+    outline: none;
+    border: none;
+    color: white;
+    line-height: 38px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    @include adaptive(pad){
+        font-size: 14px
+    }
+    @include adaptive(mobile){
+        margin-bottom: 10px;
+    }
+    &:hover{
+        border: 1px solid #42d69d;
+        line-height: 36px;
+        background-color: #fff;
+        color: #42d69d;
+    }
+    &:active{
+        background-color: #3cc28e;
+        color: white;
+    }
+}
+
+.agentsentrance_form_block_remember{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    @include adaptive(mobile){
+        width: 100%;
+        display: block;
+    }
+}
+.agentsentrance_form_block_regist{
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    @include adaptive(mobile){
+        width: 100%;
+        display: block;
+    }
+}

@@ -1,0 +1,75 @@
+$mobile: 320px;
+$pad: 768px;
+$desktop: 1200px;
+
+
+@mixin adaptive($media) {
+	@if $media == mobile {
+		@media only screen and (max-width: $mobile) {
+			@content;
+		}
+	}
+	@else if $media == pad {
+		@media only screen and (min-width: $mobile + 1) and (max-width: $desktop - 1) {
+			@content;
+		}
+	}
+	@else if $media == desktop {
+		@media only screen and (min-width: $desktop ) {
+			@content;
+		}
+	}
+}
+
+@mixin placeholder() {
+	&::-webkit-input-placeholder {
+		@content;
+	}
+	&:-moz-placeholder {
+		@content;
+	}
+	&::-moz-placeholder {
+		@content;
+	}
+	&:-ms-input-placeholder {
+		@content;
+	}
+}
+
+@mixin clearfix-micro() {
+	& {
+		*zoom: 1;
+	}
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+@mixin divshadow {
+	-webkit-box-shadow: 4px 4px 5px 0px rgba(199,199,199,1);
+	-moz-box-shadow: 4px 4px 5px 0px rgba(199,199,199,1);
+	box-shadow: 4px 4px 5px 0px rgba(199,199,199,1);
+}
+@mixin border($radius){
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-khtml-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin textInDiv{
+	overflow: hidden;
+	word-wrap: break-word;
+}

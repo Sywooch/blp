@@ -1,0 +1,24 @@
+.widjets{
+    float: left;
+    width: 25%;
+    margin-bottom: 30px;
+    @include adaptive(pad){
+        float: none;
+        display: block;
+        width: 100%;
+        div sravni-micro-widget div div{
+            max-width: none !important;
+        }
+    }
+    @include adaptive(mobile){
+        float: none;
+        display: block;
+        width: 100%;
+        div sravni-micro-widget div div{
+            max-width: none !important;
+        }
+    }
+}
+#content_news_whole{
+    float: left;
+}

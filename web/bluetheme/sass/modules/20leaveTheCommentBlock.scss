@@ -1,0 +1,87 @@
+.leaveTheCommentBlock{
+    background-color: #ffffff;
+    @include border(10px);
+    border: 1px solid #b2b2b2;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 250px;
+    padding: 20px;
+    z-index: 501;
+    padding: 7px;
+    @include adaptive(pad){
+        width: 270px;
+    }
+}
+.leaveTheCommentBlock_button{
+    line-height: 40px;
+    @include border(25px);
+    background-color: #42d69d;
+    text-align: center;
+    display: block;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "sfuidisplay-regular";
+    border: 1px solid #42d69d;
+    &:hover{
+        background-color: #fff;
+        color: #42d69d;
+    }
+    &:active{
+        background-color: #3cc28e;
+        border-color: #3cc28e;
+        color: #ffffff;
+    }
+}
+#leaveTheCommentBlock_invite{
+    position: relative;
+    text-align: center;
+    font-family: "sfuidisplay-regular";
+    color: #424955;
+    overflow: hidden;
+    height: 0;
+}
+.autoheight{
+    height: auto !important;
+}
+.leaveTheCommentBlock_invite_img{
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+.leaveTheCommentBlock_invite_act{
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    @include adaptive(pad){
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 10px;
+    }
+}
+.leaveTheCommentBlock_invite_carve{
+    width: 50%;
+    margin: 15px auto;
+    height: 1px;
+    background-color: #c6c6c6;
+}
+.leaveTheCommentBlock_invite_help{
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 15px;
+    @include adaptive(pad){
+        font-size: 12px;
+        line-height: 19px;
+        margin-bottom: 10px;
+    }
+}
+#closing_cross_feed{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    width: 17px;
+
+}

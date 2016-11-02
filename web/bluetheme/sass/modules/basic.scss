@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.global-wrapper {
+  background: #eaedef;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+button{
+    outline: none;
+    border: none;
+    &:hover{
+        outline: none;
+        border: none;
+    }
+    &:active{
+        outline: none;
+        border: none;
+    }
+}
+input{
+    outline: none;
+    border: none;
+    &:active{
+        outline: none;
+        border: none;
+    }
+    &:focus{
+        outline: none;
+        border: none;
+    }
+}
+textarea{
+    resize: none;
+}
+// Блок с отправкой и подпиской по email
+
+.email-sending {
+  background-color: #4472d4;
+
+  &-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    height: 123px;
+  }
+
+  &-title {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.625em;
+    float: left;
+    margin: 0 0 0 20px;
+  }
+
+  &-form {
+
+  }
+
+  &-input {
+    max-width: 300px;
+    height: 40px;
+    width: 100%;
+    display: inline-block;
+  }
+}
+.clearfixup::before{
+    content:'';
+    display: block;
+    clear: both;
+}
+.mobile-show{
+    display: none;
+    @include adaptive(mobile){
+        display: block;
+    }
+}
+.hidden{
+    display: none !important;
+}
+.mobile-hidden{
+    @include adaptive(mobile){
+        display: none !important;
+    }
+}
+.pad-hidden{
+    @include adaptive(pad){
+        display: none;
+    }
+    @include adaptive(mobile){
+        display: none;
+    }
+}
+.desc-hiden{
+    @include adaptive(desktop){
+        display: none;
+    }
+}
+.content-row_gray_img{
+    img{
+        @include adaptive(mobile){
+            height: 110px;
+        }
+    }
+
+}
+#backlayer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    z-index: 50;
+    display: none;
+}
+main #company-search input[type=text]{
+    background: #ffffff;
+    box-shadow: none;
+    border: 1px solid #e6e6e6;
+    outline: none;
+    background-color: #f2f5f7;
+    @include border(5px);
+    padding-left: 20px;
+    color: #424955;
+    font-family: "sfuidisplay-regular";
+    font-size: 14px;
+    &:focus{
+        border-color: #42d69d;
+    }
+    &:active{
+        border-color: #42d69d;
+    }
+    & + .arrow{
+        border-left-color: #ccc;
+    }
+}

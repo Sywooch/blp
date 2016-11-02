@@ -1,0 +1,125 @@
+.registasagent{
+    width: 100%;
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+    @include adaptive(mobile){
+        padding: 15px;
+    }
+}
+.registasagent_title{
+    font-family: "sfuidisplay-semibold";
+    font-size: 26px;
+    color: #424955;
+    color: #424955;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+.registasagent_words{
+    font-family: "sfuidisplay-regular";
+    font-size: 17px;
+    line-height: 24px;
+    color: #424955;
+    margin-bottom: 10px;
+}
+.upper{
+
+    text-transform: uppercase;
+}
+.registasagent_left{
+    width: 20%;
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+    line-height: 40px;
+    color: #424955;
+    font-size: 18px;
+    padding-right: 10px;
+    @include adaptive(pad){
+        width: 30%;
+        font-size: 15px;
+    }
+    @include adaptive(mobile){
+        width: 100%;
+        text-align: left;
+        font-size: 15px;
+        line-height: 30px;
+    }
+}
+.registasagent_right{
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    margin-right: 45%;
+    position: relative;
+    input[type="radio"]{
+        display: none;
+    }
+    @include adaptive(pad){
+        width: 65%;
+        margin-right: 0;
+    }
+    @include adaptive(mobile){
+        width: 100%;
+        margin-right: 0;
+        font-size: 14px;
+    }
+}
+.registasagent_radio_label{
+    font-size: 18px;
+    color: #424955;
+    line-height: 40px;
+    padding-left: 15%;
+    position: relative;
+    cursor: pointer;
+    &::before{
+        display: block;
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        @include border(50%);
+        border: 2px solid #4d81ef;
+        left: 18%;
+        top: 0px;
+    }
+    @include adaptive(mobile){
+        font-size: 14px;
+    }
+}
+.agentsentrance_input:checked + .registasagent_radio_label::before{
+    background-color: #42d69d;
+}
+.registasagent_right{
+    #company-search{
+        position: relative;
+        padding: 0;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        margin-bottom: 10px;
+        .arrow{
+            top: 0px;
+        }
+        input[type=text]{
+            width: 100%;
+        }
+        @include adaptive(mobile){
+            top: 0;
+        }
+    }
+    .find_agent{
+        @include adaptive(mobile){
+            margin: 10px 0;
+        }
+    }
+}
+.registasagent_right_hint{
+    font-size: 12px;
+    font-family: "sfuidisplay-regular";
+    line-height: 16px;
+    margin-bottom: 10px;
+    display: block;
+}

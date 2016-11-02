@@ -1,0 +1,22 @@
+html,
+body {
+    height: 100%;
+    overflow: hidden;
+}
+
+
+body {
+    font-family: Verdana, Geneva, sans-serif;
+
+    color: #1f282c;
+    word-wrap: break-word;
+    //remove branding
+    // background: url(/images/Untitled-5.jpg) center top no-repeat, url(/images/Untitled-55.jpg) left top repeat-x, #000b1c;
+    background: url(/images/bg2.jpg) 0 0 repeat-x,url(/images/bg3.png) 2px 0 repeat;
+    display: block;
+}
+
+ul {
+    list-style: disc outside;
+    padding:0;
+}

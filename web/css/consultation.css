@@ -1,0 +1,780 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21.10.2015, 15:46:44
+    Author     : alexander307
+*/
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~FONTS~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+@font-face {
+    font-family: OpenSans-bold; 
+    src: url(/fonts/open-sans-bold.ttf); 
+}
+@font-face {
+    font-family: OpenSans-italic; 
+    src: url(/fonts/open-sans-italic.ttf); 
+}
+@font-face {
+    font-family: OpenSans-regular; 
+    src: url(/fonts/open-sans-regular.ttf); 
+}   
+
+
+/*~~~~~~~~~~~~~~~~~~~breadcrumbs~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#consultationspeedbar{
+    font-family: OpenSans-regular;
+    font-size: 12px;
+    margin-left: -10px;
+    margin-top: 1px
+}
+
+
+#consultationspeedbar #olit-speedbar {
+    letter-spacing: 0.4px;
+
+
+}
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~STYLES FOR POPUP~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#bg_layer{
+    position:       absolute;
+    z-index:        1115;
+    width:          100%;
+    height:         1000%;
+    background:     #000;
+    opacity:        0.5;
+
+}
+
+.sendQuestionPopup{
+    z-index:        10000;
+    background:     #FFF;
+    width:          600px;
+    position:       fixed;
+    top:            300px;
+    left:           600px;
+    padding:        10px 20px;
+    border:         1px black solid;
+    border-radius:  3px;
+    font-size:      12px;
+}
+
+.sendQuestionPopup  table {
+    width:          100%;
+}
+
+
+.sendQuestionPopup  table tr td:nth-of-type(1){
+    width:          150px;
+}
+.sendQuestionPopup  table tr td:nth-of-type(2){
+    width:          300px;
+}
+
+.sendQuestionPopup  table tr td{
+    padding:        5px 0;
+}
+
+.sendQuestionPopup table input[type=text]{
+    width:          100%;
+    height:         25px;
+    padding:        0 0 0 5px;
+    font-style:     italic;
+}
+
+.sendQuestionPopup table textarea{
+    width: 400px;
+    height: 100px;
+    padding: 0 0 0 5px;
+    font-style: italic;
+}
+
+.sendQuestionPopup table input[type=button]{
+    background:     red linear-gradient(to bottom, #ff4848 0%, #ce0101 100%) repeat scroll 0 0;
+    border:         0 none;
+    border-radius:  3px;
+    box-shadow:     none;
+    color:          white;
+    font-family:    verdana;
+    font-size:      12px;
+    line-height:    30px;
+    text-align:     center;
+    width:          100%
+}
+.sendQuestionPopup .close{
+    border:         1px solid black;
+    border-radius:  50%;
+    color:          #000;
+    font-size:      15px;
+    font-weight:    500;
+    opacity:        0.5;
+    padding:        0 5px 3px;
+    position:       absolute;
+    right:          4px;
+    text-shadow:    0 1px 0 #fff;
+    top:            3px;
+    vertical-align: top;
+}
+
+.sendQuestionPopup .close:hover{
+    color:          #EC1E1E;
+    border:         1px #EC1E1E solid;
+}
+.sendQuestionPopup table input[type=checkbox]{
+    position:      relative !important;
+    bottom:        -3px !important;
+} 
+
+
+.sendQuestionPopup label.error{
+    color:          #ce0101;
+    font-size:      12px;
+} 
+
+.sendQuestionPopup .send-question-button{
+    background: #fff !important;
+    border: 1px solid #008000 !important;
+    border-radius: 3px !important;
+    box-shadow: none !important;
+    color: #008000 !important;
+    font-size: 13px !important;
+    line-height: 29px !important;
+    text-align: center !important;
+    *width: 120px !important;
+}
+
+.sendQuestionPopup .send-question-button:hover {
+   background: #008000 !important;
+   color:       #FFF !important;
+}
+
+.sendQuestionPopup .nicEdit-panelContain {
+    width: 400px !important;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~CONSULTATION PAGE~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+#consultation-wrap{
+    float:          left;
+    width:          635px;
+    height:         auto;
+    font-family:    OpenSans-regular;
+}
+
+#consultation-wrap .reference{
+    margin:         0px 0 10px 0;
+    background:     #FFF;
+}
+
+#consultation-wrap .reference .reference-title{
+    background-image: linear-gradient(to bottom, #fd2727 0%, #e11919 100%);
+    *border-radius: 6px 6px 0 0;
+    color: white;
+    font-size: 16px;
+    line-height: 49px;
+    text-align: center;
+}
+
+#consultation-wrap .reference .reference-body{
+    padding: 20px;
+}
+
+#consultation-wrap .insurance-type {
+    margin:         0px 0 10px 0;
+    *background:     #FFF;
+    border-radius:  6px 6px 0 0;
+}
+
+#consultation-wrap  .insurance-type .insurance-title{
+    *background-image: linear-gradient(to bottom, #fd2727 0%, #e11919 100%);
+    *border-radius:    6px 6px 0 0;
+    color:            #FF6A6D;
+    font-size:        18px;
+    line-height:      37px;
+    text-align:       left;
+
+    padding: 5px 0 0;
+    text-align: left;
+}
+#consultation-wrap  .insurance-type .insurance-title-href{
+    text-decoration: none;
+}
+
+#consultation-wrap  .insurance-type .insurance-title-href:hover{
+    text-decoration: underline;
+    color:           #FF6A6D;
+}
+
+
+#consultation-wrap  .insurance-type .insurance-body{
+    background:       #fff;
+    border-radius:   3px;
+}
+
+#consultation-wrap  .insurance-type .insurance-body .left-body{
+    display:        inline-block;
+    width:          100px
+}
+
+#consultation-wrap  .insurance-type .insurance-body .left-body img {
+    display:        block;
+    width:          60px;
+    height:         60px;
+    border-radius:  50%;
+    margin:         10px auto;
+}
+#consultation-wrap  .insurance-type .insurance-body .right-body{
+    display:        inline-block;
+    width:          520px;
+    vertical-align: top;
+    padding:        3px 0 10px 0px;
+}
+
+#consultation-wrap  .insurance-type .insurance-body .right-body .expert{
+    font-size:      15px;
+    padding-top:    3px;
+
+
+}
+
+#consultation-wrap  .insurance-type .insurance-body .right-body .expert-description{
+    font-size:      13px;
+
+    padding:        5x 0 0 0;
+}
+
+#consultation-wrap  .insurance-type .insurance-body .right-body .company-name, .expert-site{
+    font-size:      13px;
+    padding:        5px 0px 0 0;
+    display:        none; 
+}
+
+#consultation-wrap .expert-link .know-more, .know-less {
+    text-decoration: none;
+    color:          #3386D3;
+    cursor:         pointer;
+
+}
+
+
+#consultation-wrap .expert-link .know-more, .know-less {
+    float:          right;
+    margin:         20px -2px 0 0;
+}
+#consultation-wrap .expert-link .know-less {
+    display:  none;
+}
+
+
+#consultation-wrap  .insurance-type .insurance-body .right-body .expert-link{
+    font-size:      13px;
+
+
+}
+
+#consultation-wrap  .insurance-type .insurance-body .right-body input[type=button]{
+    background: #fff;
+    border: 1px solid #eb1e1e;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #eb1e1e;
+    *font-family: OpenSans-regular;
+    font-size: 13px;
+    line-height: 29px;
+    margin: 12px 0 0;
+    text-align: center;
+    width: 120px;
+}
+
+
+#consultation-wrap  .insurance-type .insurance-body .right-body input[type=button]:hover{
+    background: #eb1e1e;
+    border: 1px solid #eb1e1e;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #fff;
+    text-decoration: underline;
+    *font-family: OpenSans-regular;
+    font-size: 13px;
+    line-height: 29px;
+    margin: 12px 0 0;
+    text-align: center;
+    width: 120px;
+}
+
+
+#consultation-wrap  .insurance-type .insurance-body .down-body{
+    padding: 7px 9px 8px 10px;
+}
+
+#consultation-wrap  .insurance-type .insurance-body .last-question {
+    background:     #E5E5E5;
+    *height:         108px;
+    padding:        7px;
+    border-radius: 3px;
+
+}
+
+#consultation-wrap  .insurance-type .insurance-body .last-question .title {
+    font-family:     OpenSans-bold;
+    font-size:       13px;
+}
+
+#consultation-wrap  .insurance-type .insurance-body .last-question .question {
+    font-size: 13px;
+    letter-spacing: 0.16px;
+    padding: 3px 0 0;
+}
+
+#consultation-wrap  .insurance-type .insurance-body .last-question .author-date {
+    font-family:  OpenSans-italic;
+    padding: 12px 0 0 0;
+}
+
+#consultation-wrap .insurance-type .insurance-body .last-question .read-full-quest{
+    float: right;
+}
+
+#consultation-wrap  .insurance-type .insurance-body .triangle-up {
+    border-bottom: 9px solid #E5E5E5;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    height: 0;
+    margin: -9px 0 0 30px;
+    width: 0;
+}
+
+#consultation-wrap  .insurance-type .insurance-body .questions{
+    float: right;
+    font-size: 14px;
+}
+
+
+
+#consultation-wrap  .insurance-type .insurance-body .more{
+    margin: 0 0 0 17px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~CONSULT BY TYPE page ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+#consultation-wrap .one-question {
+    margin:         14px 0 0px 0;
+    background:     #FFF;
+    border-radius:  3px;
+    padding: 5px 5px 5px 9px;
+}
+
+#consultation-wrap  .one-question .insurance-body .question-title{
+    font-family:    OpenSans-bold;
+    font-size:      13px;
+}
+
+
+#consultation-wrap  .one-question .insurance-body .question-body{
+    font-size: 14px;
+    word-wrap:      break-word;
+
+}
+
+#consultation-wrap  .one-question .insurance-body  .insurance-type{
+    font-family:    OpenSans-italic;
+    float:          right;
+    font-size:      12px;
+}
+
+
+#consultation-wrap  .one-question .insurance-body  .answer-date{
+    font-family:    OpenSans-italic;
+    float:          left;
+    font-size:      12px;
+}
+
+#consultation-wrap  .one-question .answer-body{
+    background: #e6f6e6;
+    border-radius: 3px;
+    padding: 8px 0 0 13px;
+
+}
+
+#consultation-wrap  .one-question .answer-body .title{
+    font-family:  OpenSans-bold;
+    font-size: 14px;
+    letter-spacing:  0.4px;
+}
+
+#consultation-wrap  .one-question .answer-body .body{
+    font-size: 14px;
+    line-height: 1.2;
+    padding: 4px 0 0; 
+
+}
+
+#consultation-wrap  .one-question .answer-body  .answer-date{
+    font-family:    OpenSans-italic;
+    float:          left;
+    font-size:      12px;
+}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~EXPERT CABINET~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+
+#cabinet-expert .one-question {
+    margin:         0px 0 10px 0;
+    background:     #FFF;
+    border-radius:  6px 6px 0 0;
+
+}
+
+#cabinet-expert  .one-question .insurance-body .top-body{
+    padding:        5px 70px 5px 10px;
+}
+
+#cabinet-expert  .one-question .insurance-body .bottom-body{
+    padding:        5px 70px 5px 100px;
+    height:         30px;
+    margin:         -10px 0 10px 0;
+}
+
+#cabinet-expert  .one-question .insurance-body .do-edit{
+    text-decoration: underline;
+    float:           left;
+    *margin:          0 0 0 100px;
+    cursor:           pointer;
+}
+
+#cabinet-expert  .one-question .insurance-body  .do-answer{
+    text-decoration: underline;
+    float:           right;
+
+}
+
+#cabinet-expert  .one-question .insurance-body .answer-text{
+    width:          100%;
+    margin:         10px 70px 0 0 ;
+}
+
+
+
+#cabinet-expert .one-question .insurance-body .answer-button{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #008000;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #008000;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+}
+#cabinet-expert .one-question .insurance-body .answer-button:hover{
+    background: #008000;
+    color: #fff; 
+    text-decoration: underline;
+}
+#cabinet-expert  .one-question .insurance-body .do-slide-up{
+    text-decoration: underline;
+    float:           right;
+    display:         none;
+    cursor:          pointer;
+}
+
+#cabinet-expert  .one-question .insurance-body .top-body .new{
+    padding:        2px 5px;
+    background:     #EB1E1E;
+    color:          #FFF;
+}
+
+#cabinet-expert  .one-question .insurance-body .top-body .answered{
+    padding:        2px 5px;
+    background:     #85AB70;
+    float:          right;
+    color:          #FFF;
+    position:       relative;
+}
+
+#cabinet-expert  .one-question .insurance-body .left-body{
+    display:        inline-block;
+    width:          100px;
+    padding:        10px 10px;
+}
+
+
+#cabinet-expert  .one-question .insurance-body .right-body{
+    display:        inline-block;
+    width:          480px;
+    vertical-align: top;
+
+}
+
+#cabinet-expert  .one-question .insurance-body .right-body .big-text{
+    font-size:      12px;
+    padding:        10px 70px 20px 0;
+    text-align:     justify;
+    word-wrap:      break-word;
+
+}
+
+#cabinet-expert  .one-question .insurance-body .right-body .insurance-type{
+    display:        inline-block;
+    width:          250px;
+    font-style:     italic;
+}
+
+
+#cabinet-expert  .one-question .insurance-body .right-body .answer-date{
+    display:        inline-block;
+    width:          200px;
+    font-style:     italic;
+}
+
+#cabinet-expert  .one-question .insurance-body .right-body .insurance-expert{
+    font-style:     italic;
+    padding:        0 0 10px 0;
+}
+
+
+#cabinet-expert  .one-question .insurance-body .right-body .big-text .edit-answer,
+.send-edit-answer,
+.cancel-edit-answer {
+    display: none;
+    
+}
+#cabinet-expert  .one-question .insurance-body .right-body .big-text .send-edit-answer{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #008000;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #008000;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+}
+#cabinet-expert  .one-question .insurance-body .right-body .big-text .send-edit-answer:hover{
+    background: #008000;
+    color: #fff; 
+    text-decoration: underline;
+}
+
+#cabinet-expert  .one-question .insurance-body .right-body .big-text .cancel-edit-answer{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid #EB1E1E;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #EB1E1E;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+}
+#cabinet-expert  .one-question .insurance-body .right-body .big-text .cancel-edit-answer:hover{
+    background: #EB1E1E;
+    color: #fff;   
+    text-decoration: underline;
+}
+
+#cabinet-expert .do-answer, .do-slide-up, .read-more-link{
+    cursor: pointer;
+}
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+#cabinet-expert .edit-info {
+    margin:         0px 0 10px 0;
+    background:     #FFF;
+    border-radius:  6px 6px 0 0;
+    display:        inline-block;
+    width:          100%;
+
+
+}
+
+#cabinet-expert  table{
+    width: 100%;
+}
+
+#cabinet-expert  table tr td:nth-of-type(1){
+    text-align:     right;
+    width:          150px;
+    padding:        10px 10px;
+    vertical-align: top;
+}
+
+#cabinet-expert  table tr td:nth-of-type(2){
+    text-align:     left;
+    width:          250px;
+    padding:        10px 10px;
+}
+
+
+#cabinet-expert  table tr td .avatar{
+    display:        block;
+    width:          60px;
+    height:         60px;
+    border-radius:  50%;
+
+}
+
+#cabinet-expert  table tr td .avatar-wrap{
+    position: relative;
+}
+
+#cabinet-expert  table tr td .load-avatar{
+    *display:        block;
+    width:          60px;
+    height:         60px;
+    border-radius:  50%;
+    position: absolute;
+    display: none;
+    opacity: 0.8;
+    top: 0px;
+    *z-index: 10;
+
+}
+
+#cabinet-expert  table tr td .delete-avatar{
+    background: #fff none repeat scroll 0 0;
+    border: 1px solid black;
+    border-radius: 50%;
+    color: #e11919;
+    left: 43px;
+    opacity: 1;
+    padding: 1px 4px 0;
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+
+}
+
+#cabinet-expert  table tr td .delete-avatar:hover{
+    background: #e11919;;
+    border: none;
+
+    color: #fff;
+
+
+}
+#cabinet-expert table tr td .success{
+    display:        none;
+    color:          green;
+}
+
+#cabinet-expert table tr td .error{
+    display:        none;
+    color:          red;
+}
+
+
+
+#cabinet-expert  table tr td .avatar{
+    display:        block;
+    width:          60px;
+    height:         60px;
+    border-radius:  50%;
+
+}
+
+#cabinet-expert  table tr td textarea{
+    height:         150px;
+    width:          250px;
+
+
+}
+
+#cabinet-expert  table tr td .edit-fields{
+    display:        none;
+    background:     #D7E9E1;
+}
+
+#cabinet-expert  table tr td .error{
+    *display:        none;
+    color:          red;
+}
+
+#cabinet-expert  table tr td .end-edit{
+        background: #fff none repeat scroll 0 0;
+    border: 1px solid #008000;
+    border-radius: 3px;
+    box-shadow: none;
+    color: #008000;
+    font-size: 13px;
+    line-height: 29px;
+    text-align: center;
+    width: 120px;
+    display: none;
+}
+
+#cabinet-expert  table tr td .end-edit:hover{
+    background: #008000;
+    color: #fff;
+    
+}
+#cabinet-expert  table tr td input[type=text] {
+    width:          250px;
+
+}
+
+
+
+#cabinet-expert  table tr td .start-edit{
+    text-decoration: underline;
+    cursor:          pointer;
+}
+
+#cabinet-expert table tr td .start-edit:hover{
+    color:          red;
+}
+
+#cabinet-expert  .edit-info .insurance-body .right-body{
+    display:        inline-block;
+    width:          480px;
+    vertical-align: top;
+    text-align: left;
+
+}
+#cabinet-expert .one-question .read-more{
+    display:        none;
+}
+#cabinet-expert .nicEdit-panelContain{
+    width:  410px !important;
+
+}
+
+#cabinet-expert .nicEdit-main {
+    width: 400px !important;
+
+}
+#cabinet-expert .nicEdit-selected{
+    width: 400px !important;
+
+}
+/*********TABS*****/
+
+
+.show-panel{
+
+}
+
+#cabinet-expert .hide-pannel{
+    display: none;
+
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~HELP STYLES~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.empty-space{
+    height: 40px;
+}
+

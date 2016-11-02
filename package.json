@@ -1,0 +1,26 @@
+{
+  "name": "711",
+  "version": "1.0.0",
+  "description": "no",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "testgulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.likvi.com:711/711yii.git"
+  },
+  "keywords": [
+    "no"
+  ],
+  "author": "mt",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.17.2",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}

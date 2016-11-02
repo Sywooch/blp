@@ -1,0 +1,115 @@
+.agentworkreview_main{
+    background-color: #fff;
+    .agentprofile_feedbacks_item_answer{
+        @include adaptive(mobile){
+            font-size: 12px;
+        }
+    }
+}
+.agentworkreview{
+    width: 17%;
+    float: left;
+    border: none;
+    .agentlk_menu{
+        width: 100%;
+    }
+    @include adaptive(pad){
+        float: none;
+        width: 50%;
+    }
+    @include adaptive(mobile){
+        float: none;
+        width: 100%;
+    }
+}
+.agentworkreview_all{
+    float: left;
+    width: 80%;
+    @include adaptive(pad){
+        float: none;
+        width: 100%;
+    }
+    @include adaptive(mobile){
+        float: none;
+        width: 100%;
+    }
+    .agentprofile_main_specialization{
+        width: 100%;
+        display: block;
+    }
+    #company-search{
+        width: 365px;
+        @include adaptive(pad){
+            width: 343px;
+            .arrow{
+                right: 0;
+            }
+        }
+        @include adaptive(mobile){
+            width: 100%;
+            .arrow{
+                right: 0;
+            }
+        }
+    }
+    .agentprofile_feedbacks_item{
+        margin-left: 0;
+        width: 100%;
+    }
+    .agentprofile_feedbacks_item_user{
+        width: 100%;
+        @include adaptive(mobile){
+            font-size: 12px;
+            .agentprofile_rating{
+                font-size: 12px;
+            }
+        }
+    }
+}
+.agentworkreview_react{
+    float: left;
+    width: 100%;
+    margin: 20px 0;
+}
+.agentworkreview_react_button{
+    outline: none;
+    border: none;
+    background-color: #42d69d;
+    color: #FFFFFF;
+    color: white;
+    font-size: 14px;
+    line-height: 40px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -khtml-border-radius: 25px;
+    border-radius: 25px;
+    margin-right: 15px;
+    padding: 0 30px;
+    min-width: 250px;
+    &:hover{
+        background-color: #4d81ef;
+        border: 1px solid #42d69d;
+        line-height: 38px;
+    }
+    &:active{
+        background-color: #3cc28e;
+        border: none;
+        line-height: 40px;
+    }
+}
+.agentworkreview_react_answer{
+    float: left;
+
+
+}
+.agentworkreview_react_complain{
+    float: right;
+}
+.agentworkreview_react_button{
+    @include adaptive(mobile){
+        float: none;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

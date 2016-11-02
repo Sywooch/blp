@@ -1,0 +1,63 @@
+.b-share{
+    margin  : 25px;
+    margin-left : 0px;
+    
+    width   : 100%;
+    display : block;
+    padding : 0!important;
+}
+.b-share .b-share-icon{
+    display: inline-block;
+    height: 40px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -khtml-border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid red;
+    width: 76px;
+    text-align: center;
+    margin-right: 16px;
+    background-size: 30%; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.b-share  .b-share-icon_facebook {
+    border-color: #3a5899;   
+    background-size: 18%;       
+    background-image: url(/bluetheme/img/facebook_icon.svg);
+}
+.b-share  .b-share-icon_facebook:hover {                    
+    background-color: #3a5899;
+    background-image: url(/bluetheme/img/facebook_icon_white.svg);
+}
+.b-share  .b-share-icon_twitter {
+    border-color: #36bff2;
+    background-image: url(/bluetheme/img/twitter_icon.svg);
+}    
+.b-share  .b-share-icon_twitter:hover {
+    background-color: #36bff2;
+    background-image: url(/bluetheme/img/twitter_icon_white.svg);
+}  
+.b-share  .b-share-icon_vkontakte {
+    border-color: #46719f;
+    background-image: url(/bluetheme/img/vk_icon.svg);
+}    
+.b-share  .b-share-icon_vkontakte:hover {
+    background-color: #46719f;
+    background-image: url(/bluetheme/img/vk_icon_white.svg);
+}    
+.b-share .b-share-icon_gplus {
+    border-color: #db4e41;
+    background-image: url(/bluetheme/img/google_icon.svg);
+}    
+.b-share .b-share-icon_gplus:hover {
+    background-color: #db4e41;
+    background-image: url(/bluetheme/img/google_icon_white.svg);
+}            
+.b-share .b-share__handle{
+    display : inline-block;
+    height  : auto;
+    float   : none;
+    padding : 0!important;
+    vertical-align : bottom;
+}

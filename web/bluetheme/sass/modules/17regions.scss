@@ -1,0 +1,93 @@
+.regions{
+    background-color: #fff;
+    padding: 35px;
+    padding-top: 0;
+    margin-bottom: 35px;
+    font-size: 0;
+    @include adaptive(pad){
+        margin: 20px;
+        box-sizing: border-box;
+        width: 95%;
+    }
+    @include adaptive(mobile){
+        padding: 15px;
+        padding-top: 0;
+        max-height: 300px;
+        overflow-y: scroll;
+        margin-bottom: 15px;
+    }
+}
+.regions_title{
+    line-height: 87px;
+    font-size: 26px;
+    color: #424955;
+    border-bottom: 1px solid #e6e6e6;
+    width: 100%;
+    position: relative;
+    background-color: #fff;
+    @include adaptive(pad){
+        line-height: 34px;
+        font-size: 24px;
+        padding-bottom: 15px;
+    }
+    @include adaptive(mobile){
+        font-size: 18px;
+        line-height: 32px;
+        padding-bottom: 10px;
+        position: absolute;
+        top: 60px;
+        padding-top: 10px;
+        margin: 0;
+        width: 90%;
+    }
+}
+.regions_list{
+    @include adaptive(mobile){
+        padding-top: 100px;
+    }
+}
+.regions_list_block{
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+    padding-left: 3%;
+    box-sizing: border-box;
+    @include adaptive(pad){
+        width: 100%;
+        display: block;
+    }
+    @include adaptive(mobile){
+        width: 100%;
+        display: block;
+    }
+}
+.regions_item{
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #4d81ef;
+    display: block;
+    &:hover{
+        text-decoration: underline;
+    }
+    @include adaptive(pad){
+        width: 50%;
+        float: left;
+        font-size: 16px;
+        margin: 0;
+        line-height: 36px;
+    }
+    @include adaptive(mobile){
+        font-size: 13px;
+        line-height: 26px;
+        margin-bottom: 0;
+    }
+}
+.regions_title_just{
+    text-align: center;
+    @include adaptive(pad){
+        text-align: left;
+    }
+    @include adaptive(mobile){
+        text-align: left;
+    }
+}

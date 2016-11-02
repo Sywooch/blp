@@ -1,0 +1,85 @@
+.agentlk{
+    @include adaptive(mobile){
+        padding: 10px;
+    }
+}
+.agentlk_menu{
+    float: left;
+    width: 13%;
+    padding: 20px;
+    border: 1px dashed #ccc;
+    padding-top: 0;
+    @include adaptive(pad){
+        float: none;
+        display: block;
+        width: 50%;
+        padding: 0;
+    }
+    @include adaptive(mobile){
+        float: none;
+        display: block;
+        width: 100%;
+        padding: 0;
+    }
+}
+.agentlk_menu_list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include adaptive(pad){
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    @include adaptive(mobile){
+        display: -webkit-flex;
+        display: -ms-flex;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+.agentlk_menu_list_item{
+    font-size: 18px;
+    line-height: 60px;
+    color: #424955;
+    font-family: "sfuidisplay-semibold";
+    @include adaptive(pad){
+        padding: 0 20px;
+        line-height: 40px;
+    }
+    a{
+        color: #4d81ef;
+        display: block;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.papers{
+    background-color: #fff;
+    padding: 30px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.agentprofile_adress_item_text{
+    @include adaptive(mobile){
+        display: block;
+        width: 100%;
+        line-height: 30px;
+        font-size: 14px;
+    }
+}
+.agentprofile_adress_item_map{
+    @include adaptive(mobile){
+        display: block;
+        float: none;
+        width: 100%;
+        iframe{
+            height: 150px;
+        }
+    }
+}

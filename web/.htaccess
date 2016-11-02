@@ -1,0 +1,16 @@
+AddDefaultCharset UTF-8
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule . index.php
+
+php_value session.gc_maxlifetime 86400
+
+<IfModule mod_php5.c>
+   php_value short_open_tag 1
+ </IfModule>
+
+

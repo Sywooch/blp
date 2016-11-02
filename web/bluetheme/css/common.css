@@ -1,0 +1,82 @@
+.submit {
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: #42d69d;
+    color: #FFFFFF;
+    color: white;
+    font-size: 14px;
+    line-height: 40px;
+    width: 155px;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -khtml-border-radius: 25px;
+    border-radius: 25px;
+    margin-right: 15px;
+}
+.submit:hover {
+    background-color: #fff;
+    border: 1px solid #42d69d;
+    line-height: 38px;
+    color: #42d69d;
+}
+.submit:focus{
+    background-color: #3cc28e;
+    color: #fff;
+}
+#counters {
+    float: left;
+    padding-left: 2px;
+    padding-right: 10px;
+}
+#copyright {
+    margin-top: 20px;
+}
+.image {
+	margin:30px;
+	float:left;
+	cursor:pointer;
+	max-height:100px;
+}
+
+.popup {
+	position: fixed;
+        /* height: 100%; */
+        /* width: 100%; */
+        top: 300%;
+        left: 0;
+        display: none;
+        text-align: center;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+}
+
+.popup_bg {
+	background:rgba(0,0,0,0.4);
+	position:absolute;
+	z-index:1;
+	height:100%;
+	width:100%;
+}
+
+
+.popup_img {
+	position: relative;
+	margin:0 auto;
+        right: 9%;
+	z-index:2;
+	max-width:60%;
+	margin:1% 0 0 0;
+}
+.error {
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-bottom: 0;
+    line-height: 37px;
+    color: red;
+}

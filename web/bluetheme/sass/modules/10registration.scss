@@ -1,0 +1,55 @@
+.authorization_page{
+    padding-bottom: 60px;
+    padding-top: 60px;
+    @include adaptive(mobile){
+        padding: 0;
+    }
+}
+.authorization_block{
+    @include adaptive(mobile){
+        box-shadow: none;
+    }
+}
+.registration_block{
+    min-height: 590px;
+    label{
+        display: inline-block;
+        vertical-align: top;
+        width: 17px;
+        height: 17px;
+        background-color: #f2f5f7;
+        border: 1px solid #e6e6e6;
+        @include border(3px)
+        &:hover{
+            background-color: #dee1e3;
+            transition: all 0.3s;
+        }
+    }
+    input[type='checkbox']:checked + label{
+        width: 17px;
+        height: 17px;
+        background-image: url('../img/agree_swash.svg');
+        border: none;
+        background-color: #fff;
+    }
+    .registration_block_agreement{
+        font-family : "sfuidisplay-regular";
+        font-size : 14px;
+        color : #424955;
+        color : rgb(66, 73, 85);
+        display: inline-block;
+        vertical-align: top;
+        width: 75%;
+        a{
+            color: $blue;
+        }
+    }
+    button{
+        width: 100%;
+        margin-top: 15px;
+        margin-right: 0;
+    }
+}
+#use_agreement_true{
+    display: none;
+}
